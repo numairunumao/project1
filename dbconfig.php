@@ -1,10 +1,5 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$datbase = "project1";
-mysql_connect($host,$user,$password);
-mysql_select_db($datbase);
-mysql_query("SET NAMES UTF8");
+session_start();
+$mysqli = mysqli_connect('localhost','root','','project1');
+mysqli_set_charset($mysqli, "utf8");
 date_default_timezone_set('Asia/Bangkok');
-?>

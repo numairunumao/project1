@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>เกี่ยวกับโปรเจค</title>
+    <title>ติดตามประเมินผลโครงการสำคัญ</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,371 +29,385 @@
     <div class="container">
         <?php include("menu2.php"); ?>
     </div>
-    <!-- /.container -->
 </nav>
-<!-- Page Content -->
+
+
 <div class="container">
 
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">ติดตามประเมินผลโครงการสำคัญ
-        </div>
-                <form method="get" action="insert2.php" enctype="multipart/form-data">
-                <br>
-                <div class="col-lg-12">
-                <h1>กรอกข้อมูลติดตาม</h1>
-                <h3>ลงทะเบียนข้อมูลใหม่</h3>
-                </div>
 
-                    <div  class="col-lg-8">
-                        <div class="row">
-                        <div class="col-md-4"><h4>เลือกจังหวัด</h4></div>
-                        <div class="col-md-8">
-                            <select class="form-control" name="a1">
-                            <option>กรุงเทพมหานคร</option>
-                            <option>เชียงใหม่</option>
-                            <option>เชียงราย</option>
-                            <option>ลำปาง</option>
-                            <option>ลำพูน</option>
-                        </select>
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4"><h4>ชื่อพื้นที่</h4></div>
-                            <div class="col-md-8">
-                            <input type="text" class="form-control" id="landName" name="a2">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4"><h4>ชื่อหน่วยงานที่รับผิดชอบ</h4></div>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="landName" name="a3">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4"><h4>ชื่อผู้กรอกข้อมูล</h4></div>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="landName" name="a4">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4"><h4>วันที่กรอกข้อมูล</h4></div>
-                            <div class="col-md-8">
-                                <input type="date" class="form-control" id="landName" name="a5">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                <div class="col-lg-12">
-                <h3>ขั้นตอนการกำหนดพื้นที่และจัดทำข้อมูลพื้นที่</h3>
-                </div>
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>ขื่อพื้นที่ที่นำมาจัดที่ดินทำกิน</h4></div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="landName" name="b1">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>เนื้อที่เริ่มดำเนินการ (ไร่)</h4></div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="landName" name="b2">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>การจัดทำข้อมูล</h4></div>
-                        <div class="col-md-8">
-                            <div class="form-check">
-                                <h4>
-                                    <input class="form-check-input" type="checkbox" name="b3"> อยู่ระหว่างการดำเนินงาน
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ส่งไฟล์แผนที่ดำเนินการ</h4> </div>
-                        <div class="col-md-8"><input type="file" id="exampleInputFile" name="b4" style="font-size: small"></div>
-                    </div>
-                    </div>
-
-                <div class="col-lg-12">
-                <h3>ขั้นตอนการจัดหาที่ดิน</h3>
-                </div>
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่นำส่งคณะอนุกรรมการจัดหาที่ดิน</h4></div>
-                        <div class="col-md-8">
-                            <input type="date" class="form-control" id="landName" name="c1">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4"><h4>การพิจารณาคณะอนุกรรมการจัดหาที่ดิน</h4></div>
-                        <div class="col-md-8">
-                            <div class="form-check">
-                                <h4>
-                                    <input class="form-check-input" type="checkbox" name="c2"> อยู่ระหว่าง การพิจารณา
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้ คทช.จังหวัด</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="c3"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>การตรวจสอบและพิจารณาของ คทช.จังหวัด</h4></div>
-                        <div class="col-md-8">
-                            <div class="form-check">
-                                <h4>
-                                    <input class="form-check-input" type="checkbox" name="c4">
-                                    การตรวจสอบและพิจารณาของ คทช.จังหวัด
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คทช.จังหวัด ส่งรายงานผลให้คณะอนุกรรมการจัดหาที่ดิน</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="c5"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ได้รับการเห็นชอบคณะอนุกรรมการจัดหาที่ดิน</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="c6"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>อำเภอ</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="c7" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 1</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="c8" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 2</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="c9"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 3</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="c10"></div>
-                    </div>
-
-                    </div>
-
-                <div class="col-lg-12">
-                <h3>ขั้นตอนการจัดที่ดิน</h3>
-                </div>
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ อนุญาติให้เข้าทำประโยชน์</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d1" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ มอบหนังสืออนุญาติให้เข้าทำประโยชน์</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d2" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>พื้นที่ที่ได้รับอนุญาติใช้ประโยชน์รวม (ไร่)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d3" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>อำเภอ</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="d4"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 1</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="d5"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 2</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="d6"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ตำบลที่ 3</h4></div>
-                        <div class="col-md-8"><input type="text" class="form-control" id="landName2" name="d7"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (ไร่)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d8" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (แปลง)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d9" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ผู้ที่ได้รับการจัดเพื่ออยู่อาศัย (คน)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d10" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>พื้นที่ที่จัดเพื่อทำกินรวม (ไร่)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d11" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>พื้นที่ที่จัดเพื่อทำกินรวม (แปลง)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d12" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ผู้ที่ได้รับการจัดเพื่อทำกิน (คน)</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="d13" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการจัดที่ดิน</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d14" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ จัดทำสัญญา</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d15" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ส่งไฟล์ข้อมูลการได้รับอนุญาต</h4></div>
-                        <div class="col-md-8"><input type="file" id="exampleInputFile" style="font-size: small" name="d16"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>อยู่ระหว่างการกำหนดหลักเกณฑ์คุณสมบัติ และประเภทของผู้ได้รับความช่วยเหลือ</h4></div>
-                        <div class="col-md-8">
-                            <div class="form-check">
-                                <h4>
-                                    <input class="form-check-input" type="checkbox" name="d17">
-                                    อยู่ระหว่างการกำหนดหลักเกณ
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้ คทช.จังหวัด</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d18" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>การตรวจสอบและจัดทำข้อมูลคนของ คทช.จังหวัด</h4></div>
-                        <div class="col-md-8">
-                            <div class="form-check">
-                                <h4>
-                                    <input class="form-check-input" type="checkbox" name="d19">
-                                    อยู่ระหว่าง การตรวจสอบและจัดทำข้อมูล
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คทช.จังหวัด ส่งข้อมูลคนให้คณะอนุกรรมการจัดที่ดิน </h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d20" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คทช.จังหวัด แจ้งหน่วยงานรับผิดชอบดำเนินการตามกระบวนการอนุญาต/จัดทำสัญญาแต่ละหน่วยงาน</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ อนุญาติให้เข้าทำประโยชน์ </h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d21" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ จัดทำสัญญา</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="d22" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>ส่งไฟล์ข้อมูลการจัดคนลงพื้นที่</h4></div>
-                        <div class="col-md-8"><input type="file" id="exampleInputFile" style="font-size: small" name="d23"></div>
-                    </div>
-                    </div>
-
-                <div class="col-lg-12">
-                <h3>ขั้นตอนการส่งเสริมและพัฒนาอาชีพ</h3>
-                </div>
-
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="e1" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คทช.จังหวัด ส่งรายงานผลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="e2" ></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>วันที่ คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ</h4></div>
-                        <div class="col-md-8"><input class="form-control" type="date" id="example-date-input" name="e3" ></div>
-                    </div>
-                    </div>
-
-                <div class="col-lg-12">
-                <h3>การดำเนินงานและส่งเสริมพัฒนาอาชีพ</h3>
-                </div>
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>ส่งไฟล์รายงานการดำเนินงาน</h4></div>
-                        <div class="col-md-8"><input type="file" id="exampleInputFile" style="font-size: small" name="f1"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4"><h4>รายละเอียด</h4></div>
-                        <div class="col-md-8"><textarea class="form-control" rows="3" name="f2"></textarea></div>
-                    </div>
-                    </div>
-
-                <div class="col-lg-12"  >
-                <h3>การตรวจทานข้อมูล</h3>
-                </div>
-                    <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4"><h4>กรุณาใส่ตัวเลข</h4></div>
-                        <div class="col-md-8"><input type="number" class="form-control" id="landName2" name="g1" ></div>
-                    </div>
-
-                    <div align="center">
-                        <button type="submit" name="submit" class="btn btn-info btn-lg">ยืนยัน</button>
-                    </div>
-                    </div>
-                </form>
-            </h1>
+    <div class="page-header">
+        <h1 class="h2"> ติดตามประเมินผลโครงการสำคัญ <a class="btn btn-default" href="#"> <span
+                    class="glyphicon glyphicon-eye-open"></span> &nbsp; ดูข้อมูลทั้งหมด </a></h1>
     </div>
 
 
+    <?php
+    if (isset($errMSG)) {
+        ?>
+        <div class="alert alert-danger">
+            <span class="glyphicon glyphicon-info-sign"></span> <strong><?php echo $errMSG; ?></strong>
+        </div>
+        <?php
+    } else if (isset($successMSG)) {
+        ?>
+        <div class="alert alert-success">
+            <strong><span class="glyphicon glyphicon-info-sign"></span> <?php echo $successMSG; ?></strong>
+        </div>
+        <?php
+    }
+    ?>
 
-    <hr>
+    <form method="post" action="insert.php" enctype="multipart/form-data" class="form-horizontal">
 
-    <!-- Footer -->
-    <?php include("footer.php"); ?>
+        <table class="table table-bordered table-responsive">
+
+            <td>
+                <h3>กรอกข้อมูลติดตาม</h3>
+            </td>
+            <td>
+
+            </td>
+            <tr>
+                <td><label class="control-label">เลือกจังหวัด a1</label></td>
+                <td><select name="a1">
+                        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                        <option value="ลำพูน">ลำพูน</option>
+                        <option value="พะเยา" selected>พะเยา</option>
+                        <option value="น่าน">น่าน</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label">ชื่อพื้นที่ a2</label></td>
+                <td><input class="form-control" type="text" name="a2"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ชื่อหน่วยงานที่รับผิดชอบ a3</label></td>
+                <td><input class="form-control" type="text" name="a3"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ชื่อผู้กรอกข้อมูล a4</label></td>
+                <td><input class="form-control" type="text" name="a4"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่กรอกข้อมูล a5</label></td>
+                <td><input class="form-control" type="date" name="a5"/></td>
+            </tr>
+
+
+            <!--       B     -->
+            <td>
+                <h3>ขั้นตอนการกำหนดพื้นที่และจัดทำข้อมูลพื้นที่</h3>
+            </td>
+
+            <td>
+
+            </td>
+
+            <tr>
+                <td><label class="control-label"> ขื่อพื้นที่ที่นำมาจัดที่ดินทำกิน b1 </label></td>
+                <td><input class="form-control" type="text" name="b1"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> เนื้อที่เริ่มดำเนินการ (ไร่) b2 </label></td>
+                <td><input class="form-control" type="text" name="b2"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> การจัดทำข้อมูล b3 </label></td>
+                <td><input class="form-control" type="checkbox" name="b3"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label">ส่งไฟล์แผนที่ดำเนินการ b4</label></td>
+                <td><input class="input-group" type="file" name="user_image"
+                           accept="file_extension|audio/*|video/*|image/*|media_type"/></td>
+            </tr>
+
+
+            <!--       C     -->
+            <td>
+                <h3>ขั้นตอนการจัดหาที่ดิน</h3>
+            </td>
+            <td>
+
+            </td>
+
+            <tr>
+                <td><label class="control-label"> วันที่นำส่งคณะอนุกรรมการจัดหาที่ดิน c1</label></td>
+                <td><input class="form-control" type="date" name="c1"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> การพิจารณาคณะอนุกรรมการจัดหาที่ดิน c2</label></td>
+                <td><input class="form-control" type="checkbox" name="c2"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้ คทช.จังหวัด c3</label>
+                </td>
+                <td><input class="form-control" type="date" name="c3"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> การตรวจสอบและพิจารณาของ คทช.จังหวัด c4 </label></td>
+                <td><input class="form-control" type="checkbox" name="c4"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ คทช.จังหวัด ส่งรายงานผลให้คณะอนุกรรมการจัดหาที่ดิน c5</label>
+                </td>
+                <td><input class="form-control" type="date" name="c5"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ได้รับการเห็นชอบคณะอนุกรรมการจัดหาที่ดิน c6</label></td>
+                <td><input class="form-control" type="date" name="c6"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> อำเภอ c7 </label></td>
+                <td><input class="form-control" type="text" name="c7"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 1 c8 </label></td>
+                <td><input class="form-control" type="text" name="c8"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 2 c9 </label></td>
+                <td><input class="form-control" type="text" name="c9"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 3 c10 </label></td>
+                <td><input class="form-control" type="text" name="c10"/></td>
+            </tr>
+
+            <!--       D     -->
+
+            <td>
+                <h3>ขั้นตอนการจัดที่ดิน</h3>
+            </td>
+            <td>
+            </td>
+
+            <tr>
+                <td><label class="control-label"> วันที่ อนุญาติให้เข้าทำประโยชน์ d1</label>
+                </td>
+                <td><input class="form-control" type="date" name="d1"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ มอบหนังสืออนุญาติให้เข้าทำประโยชน์ d2</label>
+                </td>
+                <td><input class="form-control" type="date" name="d2"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> พื้นที่ที่ได้รับอนุญาติใช้ประโยชน์รวม (ไร่) d3 </label></td>
+                <td><input class="form-control" type="text" name="d3"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> อำเภอ d4 </label></td>
+                <td><input class="form-control" type="text" name="d4"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 1 d5 </label></td>
+                <td><input class="form-control" type="text" name="d5"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 2 d6 </label></td>
+                <td><input class="form-control" type="text" name="d6"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ตำบลที่ 3 d7 </label></td>
+                <td><input class="form-control" type="text" name="d7"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (ไร่) d8 </label></td>
+                <td><input class="form-control" type="text" name="d8"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (แปลง) d9 </label></td>
+                <td><input class="form-control" type="text" name="d9"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ผู้ที่ได้รับการจัดเพื่ออยู่อาศัย (คน) d10 </label></td>
+                <td><input class="form-control" type="text" name="d10"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> พื้นที่ที่จัดเพื่อทำกินรวม (ไร่) d11 </label></td>
+                <td><input class="form-control" type="text" name="d11"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> พื้นที่ที่จัดเพื่อทำกินรวม (แปลง) d12 </label></td>
+                <td><input class="form-control" type="text" name="d12"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> ผู้ที่ได้รับการจัดเพื่อทำกิน (คน) d13 </label></td>
+                <td><input class="form-control" type="text" name="d13"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่
+                        คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการจัดที่ดินd14</label>
+                </td>
+                <td><input class="form-control" type="date" name="d14"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ จัดทำสัญญา d15</label>
+                </td>
+                <td><input class="form-control" type="date" name="d15"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label">ส่งไฟล์ข้อมูลการได้รับอนุญาต d16</label></td>
+                <td><input class="input-group" type="file" name="user_image2"
+                           accept="file_extension|audio/*|video/*|image/*|media_type"/></td>
+            </tr>
+
+
+            <tr>
+                <td><label class="control-label"> อยู่ระหว่างการกำหนดหลักเกณฑ์คุณสมบัติ
+                        และประเภทของผู้ได้รับความช่วยเหลือ d17 </label></td>
+                <td><input class="form-control" type="checkbox" name="d17"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้ คทช.จังหวัด d18</label>
+                </td>
+                <td><input class="form-control" type="date" name="d18"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> การตรวจสอบและจัดทำข้อมูลคนของ คทช.จังหวัด d19 </label></td>
+                <td><input class="form-control" type="checkbox" name="d19"/></td>
+            </tr>
+
+
+            <tr>
+                <td><label class="control-label"> วันที่ คทช.จังหวัด ส่งข้อมูลคนให้คณะอนุกรรมการจัดที่ดิน d20</label>
+                </td>
+                <td><input class="form-control" type="date" name="d20"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ คทช.จังหวัด
+                        แจ้งหน่วยงานรับผิดชอบดำเนินการตามกระบวนการอนุญาต/จัดทำสัญญาแต่ละหน่วยงาน d21</label>
+                </td>
+                <td><input class="form-control" type="date" name="d21"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ อนุญาติให้เข้าทำประโยชน์ * d22</label>
+                </td>
+                <td><input class="form-control" type="date" name="d22"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ จัดทำสัญญา d23</label>
+                </td>
+                <td><input class="form-control" type="date" name="d23"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label">ส่งไฟล์ข้อมูลการจัดคนลงพื้นที่ d24</label></td>
+                <td><input class="input-group" type="file" name="user_image3"
+                           accept="file_extension|audio/*|video/*|image/*|media_type"/></td>
+            </tr>
+
+
+            <!--       E     -->
+
+
+            <td>
+                <h3>ขั้นตอนการส่งเสริมและพัฒนาอาชีพ</h3>
+            </td>
+            <td>
+            </td>
+
+            <tr>
+                <td><label class="control-label"> วันที่
+                        คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ e1</label>
+                </td>
+                <td><input class="form-control" type="date" name="e1"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่ คทช.จังหวัด ส่งรายงานผลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ
+                        e2</label>
+                </td>
+                <td><input class="form-control" type="date" name="e2"/></td>
+            </tr>
+
+            <tr>
+                <td><label class="control-label"> วันที่
+                        คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ e3</label>
+                </td>
+                <td><input class="form-control" type="date" name="e3"/></td>
+            </tr>
+
+
+            <tr>
+                <td><label class="control-label"> ส่งไฟล์รายงานการดำเนินงาน F1</label></td>
+                <td><input class="input-group" type="file" name="user_image4"
+                           accept="file_extension|audio/*|video/*|image/*|media_type"/></td>
+            </tr>
+
+
+            <tr>
+                <td><label class="control-label"> Text area f2 </label></td>
+                <td><textarea name="f2" rows="4" cols="50"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit" name="btnsave" class="btn btn-default">
+                        <span class="glyphicon glyphicon-save"></span> &nbsp; save
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+    <div class="alert alert-info">
+        <strong>tutorial link !</strong> <a
+            href="http://www.codingcage.com/2016/02/upload-insert-update-delete-image-using.html">Coding Cage</a>!
+    </div>
+
 
 </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- Footer -->
+<?php include("footer.php"); ?>
+
 <!-- /.container -->
 
 <!-- jQuery -->
