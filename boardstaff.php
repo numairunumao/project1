@@ -18,6 +18,7 @@
     <link href="css/portfolio-item.css" rel="stylesheet">
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link href="css/page.css" rel="stylesheet">
     <![endif]-->
 
 </head>
@@ -34,9 +35,12 @@
 
 <div class="container">
 
+    <div class="row centered-form">
+        <div class="panel panel-primary">
 
-    <div class="page-header">
-        <h1 class="h2"> ติดตามประเมินผลโครงการสำคัญ <a class="btn btn-default" href="#"> <span
+
+    <div class="panel-heading">
+        <h1 class="h2" > ติดตามประเมินผลโครงการสำคัญ <a class="btn btn-default" href="#"> <span
                     class="glyphicon glyphicon-eye-open"></span> &nbsp; ดูข้อมูลทั้งหมด </a></h1>
     </div>
 
@@ -56,7 +60,7 @@
         <?php
     }
     ?>
-
+    <div class="panel-body">
     <form method="post" action="insert.php" enctype="multipart/form-data" class="form-horizontal">
 
         <table class="table table-bordered table-responsive">
@@ -390,6 +394,9 @@
         </table>
 
     </form>
+    </div>
+        </div>
+    </div>
 
 
     <div class="alert alert-info">
