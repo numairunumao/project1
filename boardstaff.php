@@ -65,7 +65,7 @@
 
         <table class="table table-bordered table-responsive">
 
-            <td>
+            <td colspan="2" class="bg-primary">
                 <h3>กรอกข้อมูลติดตาม</h3>
             </td>
             <td>
@@ -73,28 +73,102 @@
             </td>
             <tr>
                 <td><label class="control-label">เลือกจังหวัด a1</label></td>
-                <td><select name="a1">
+                <td><select class="form-control" name="a1" required>
+                        <option value="" selected>--------- เลือกจังหวัด ---------</option>
                         <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
-                        <option value="ลำพูน">ลำพูน</option>
-                        <option value="พะเยา" selected>พะเยา</option>
-                        <option value="น่าน">น่าน</option>
+                        <option value="กระบี่">กระบี่ </option>
+                        <option value="กาญจนบุรี">กาญจนบุรี </option>
+                        <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                        <option value="กำแพงเพชร">กำแพงเพชร </option>
+                        <option value="ขอนแก่น">ขอนแก่น</option>
+                        <option value="จันทบุรี">จันทบุรี</option>
+                        <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                        <option value="ชัยนาท">ชัยนาท </option>
+                        <option value="ชัยภูมิ">ชัยภูมิ </option>
+                        <option value="ชุมพร">ชุมพร </option>
+                        <option value="ชลบุรี">ชลบุรี </option>
+                        <option value="เชียงใหม่">เชียงใหม่ </option>
+                        <option value="เชียงราย">เชียงราย </option>
+                        <option value="ตรัง">ตรัง </option>
+                        <option value="ตราด">ตราด </option>
+                        <option value="ตาก">ตาก </option>
+                        <option value="นครนายก">นครนายก </option>
+                        <option value="นครปฐม">นครปฐม </option>
+                        <option value="นครพนม">นครพนม </option>
+                        <option value="นครราชสีมา">นครราชสีมา </option>
+                        <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                        <option value="นครสวรรค์">นครสวรรค์ </option>
+                        <option value="นราธิวาส">นราธิวาส </option>
+                        <option value="น่าน">น่าน </option>
+                        <option value="นนทบุรี">นนทบุรี </option>
+                        <option value="บึงกาฬ">บึงกาฬ</option>
+                        <option value="บุรีรัมย์">บุรีรัมย์</option>
+                        <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                        <option value="ปทุมธานี">ปทุมธานี </option>
+                        <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                        <option value="ปัตตานี">ปัตตานี </option>
+                        <option value="พะเยา">พะเยา </option>
+                        <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                        <option value="พังงา">พังงา </option>
+                        <option value="พิจิตร">พิจิตร </option>
+                        <option value="พิษณุโลก">พิษณุโลก </option>
+                        <option value="เพชรบุรี">เพชรบุรี </option>
+                        <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                        <option value="แพร่">แพร่ </option>
+                        <option value="พัทลุง">พัทลุง </option>
+                        <option value="ภูเก็ต">ภูเก็ต </option>
+                        <option value="มหาสารคาม">มหาสารคาม </option>
+                        <option value="มุกดาหาร">มุกดาหาร </option>
+                        <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                        <option value="ยโสธร">ยโสธร </option>
+                        <option value="ยะลา">ยะลา </option>
+                        <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                        <option value="ระนอง">ระนอง </option>
+                        <option value="ระยอง">ระยอง </option>
+                        <option value="ราชบุรี">ราชบุรี</option>
+                        <option value="ลพบุรี">ลพบุรี </option>
+                        <option value="ลำปาง">ลำปาง </option>
+                        <option value="ลำพูน">ลำพูน </option>
+                        <option value="เลย">เลย </option>
+                        <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                        <option value="สกลนคร">สกลนคร</option>
+                        <option value="สงขลา">สงขลา </option>
+                        <option value="สมุทรสาคร">สมุทรสาคร </option>
+                        <option value="สมุทรปราการ">สมุทรปราการ </option>
+                        <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                        <option value="สระแก้ว">สระแก้ว </option>
+                        <option value="สระบุรี">สระบุรี </option>
+                        <option value="สิงห์บุรี">สิงห์บุรี </option>
+                        <option value="สุโขทัย">สุโขทัย </option>
+                        <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                        <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                        <option value="สุรินทร์">สุรินทร์ </option>
+                        <option value="สตูล">สตูล </option>
+                        <option value="หนองคาย">หนองคาย </option>
+                        <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                        <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                        <option value="อุดรธานี">อุดรธานี </option>
+                        <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                        <option value="อุทัยธานี">อุทัยธานี </option>
+                        <option value="อุบลราชธานี">อุบลราชธานี</option>
+                        <option value="อ่างทอง">อ่างทอง </option>
                     </select>
                 </td>
             </tr>
 
             <tr>
                 <td><label class="control-label">ชื่อพื้นที่ a2</label></td>
-                <td><input class="form-control" type="text" name="a2"/></td>
+                <td><input class="form-control" type="text" name="a2" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> ชื่อหน่วยงานที่รับผิดชอบ a3</label></td>
-                <td><input class="form-control" type="text" name="a3"/></td>
+                <td><input class="form-control" type="text" name="a3" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> ชื่อผู้กรอกข้อมูล a4</label></td>
-                <td><input class="form-control" type="text" name="a4"/></td>
+                <td><input class="form-control" type="text" name="a4"required/></td>
             </tr>
 
             <tr>
@@ -104,7 +178,7 @@
 
 
             <!--       B     -->
-            <td>
+            <td colspan="2">
                 <h3>ขั้นตอนการกำหนดพื้นที่และจัดทำข้อมูลพื้นที่</h3>
             </td>
 
@@ -119,7 +193,7 @@
 
             <tr>
                 <td><label class="control-label"> เนื้อที่เริ่มดำเนินการ (ไร่) b2 </label></td>
-                <td><input class="form-control" type="text" name="b2"/></td>
+                <td><input class="form-control" type="text" name="b2"required/></td>
             </tr>
 
             <tr>
@@ -135,7 +209,7 @@
 
 
             <!--       C     -->
-            <td>
+            <td colspan="2" class="bg-primary">
                 <h3>ขั้นตอนการจัดหาที่ดิน</h3>
             </td>
             <td>
@@ -149,7 +223,7 @@
 
             <tr>
                 <td><label class="control-label"> การพิจารณาคณะอนุกรรมการจัดหาที่ดิน c2</label></td>
-                <td><input class="form-control" type="checkbox" name="c2"/></td>
+                <td><input class="form-control" type="checkbox" name="c2"/>อยู่ระหว่างการพิจารณา</td>
             </tr>
 
             <tr>
@@ -160,7 +234,7 @@
 
             <tr>
                 <td><label class="control-label"> การตรวจสอบและพิจารณาของ คทช.จังหวัด c4 </label></td>
-                <td><input class="form-control" type="checkbox" name="c4"/></td>
+                <td><input class="form-control" type="checkbox" name="c4"/>การตรวจสอบและพิจารณาของ คทช.จังหวัด</td>
             </tr>
 
             <tr>
@@ -176,12 +250,12 @@
 
             <tr>
                 <td><label class="control-label"> อำเภอ c7 </label></td>
-                <td><input class="form-control" type="text" name="c7"/></td>
+                <td><input class="form-control" type="text" name="c7"required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> ตำบลที่ 1 c8 </label></td>
-                <td><input class="form-control" type="text" name="c8"/></td>
+                <td><input class="form-control" type="text" name="c8"required/></td>
             </tr>
 
             <tr>
@@ -196,7 +270,7 @@
 
             <!--       D     -->
 
-            <td>
+            <td colspan="2" class="bg-primary">
                 <h3>ขั้นตอนการจัดที่ดิน</h3>
             </td>
             <td>
@@ -205,18 +279,18 @@
             <tr>
                 <td><label class="control-label"> วันที่ อนุญาติให้เข้าทำประโยชน์ d1</label>
                 </td>
-                <td><input class="form-control" type="date" name="d1"/></td>
+                <td><input class="form-control" type="date" name="d1" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ มอบหนังสืออนุญาติให้เข้าทำประโยชน์ d2</label>
                 </td>
-                <td><input class="form-control" type="date" name="d2"/></td>
+                <td><input class="form-control" type="date" name="d2" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> พื้นที่ที่ได้รับอนุญาติใช้ประโยชน์รวม (ไร่) d3 </label></td>
-                <td><input class="form-control" type="text" name="d3"/></td>
+                <td><input class="form-control" type="text" name="d3" required/></td>
             </tr>
 
             <tr>
@@ -241,45 +315,45 @@
 
             <tr>
                 <td><label class="control-label"> พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (ไร่) d8 </label></td>
-                <td><input class="form-control" type="text" name="d8"/></td>
+                <td><input class="form-control" type="text" name="d8" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> พื้นที่ที่จัดเพื่ออยู่อาศัยรวม (แปลง) d9 </label></td>
-                <td><input class="form-control" type="text" name="d9"/></td>
+                <td><input class="form-control" type="text" name="d9" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> ผู้ที่ได้รับการจัดเพื่ออยู่อาศัย (คน) d10 </label></td>
-                <td><input class="form-control" type="text" name="d10"/></td>
+                <td><input class="form-control" type="text" name="d10" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> พื้นที่ที่จัดเพื่อทำกินรวม (ไร่) d11 </label></td>
-                <td><input class="form-control" type="text" name="d11"/></td>
+                <td><input class="form-control" type="text" name="d11" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> พื้นที่ที่จัดเพื่อทำกินรวม (แปลง) d12 </label></td>
-                <td><input class="form-control" type="text" name="d12"/></td>
+                <td><input class="form-control" type="text" name="d12" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> ผู้ที่ได้รับการจัดเพื่อทำกิน (คน) d13 </label></td>
-                <td><input class="form-control" type="text" name="d13"/></td>
+                <td><input class="form-control" type="text" name="d13" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่
                         คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการจัดที่ดินd14</label>
                 </td>
-                <td><input class="form-control" type="date" name="d14"/></td>
+                <td><input class="form-control" type="date" name="d14" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ จัดทำสัญญา d15</label>
                 </td>
-                <td><input class="form-control" type="date" name="d15"/></td>
+                <td><input class="form-control" type="date" name="d15" required/></td>
             </tr>
 
             <tr>
@@ -292,44 +366,47 @@
             <tr>
                 <td><label class="control-label"> อยู่ระหว่างการกำหนดหลักเกณฑ์คุณสมบัติ
                         และประเภทของผู้ได้รับความช่วยเหลือ d17 </label></td>
-                <td><input class="form-control" type="checkbox" name="d17"/></td>
+
+                <td colspan="2"><input class="form-control" type="checkbox" name="d17" size="small">อยู่ระหว่างการกำหนดหลักเกณฑ์</td>
+
+
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้ คทช.จังหวัด d18</label>
                 </td>
-                <td><input class="form-control" type="date" name="d18"/></td>
+                <td><input class="form-control" type="date" name="d18" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> การตรวจสอบและจัดทำข้อมูลคนของ คทช.จังหวัด d19 </label></td>
-                <td><input class="form-control" type="checkbox" name="d19"/></td>
+                <td><input class="form-control" type="checkbox" name="d19"/>อยู่ระหว่าง การตรวจสอบและจัดทำข้อมูล</td>
             </tr>
 
 
             <tr>
                 <td><label class="control-label"> วันที่ คทช.จังหวัด ส่งข้อมูลคนให้คณะอนุกรรมการจัดที่ดิน d20</label>
                 </td>
-                <td><input class="form-control" type="date" name="d20"/></td>
+                <td><input class="form-control" type="date" name="d20" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ คทช.จังหวัด
                         แจ้งหน่วยงานรับผิดชอบดำเนินการตามกระบวนการอนุญาต/จัดทำสัญญาแต่ละหน่วยงาน d21</label>
                 </td>
-                <td><input class="form-control" type="date" name="d21"/></td>
+                <td><input class="form-control" type="date" name="d21" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ อนุญาติให้เข้าทำประโยชน์ * d22</label>
                 </td>
-                <td><input class="form-control" type="date" name="d22"/></td>
+                <td><input class="form-control" type="date" name="d22" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ จัดทำสัญญา d23</label>
                 </td>
-                <td><input class="form-control" type="date" name="d23"/></td>
+                <td><input class="form-control" type="date" name="d23" required/></td>
             </tr>
 
             <tr>
@@ -342,7 +419,7 @@
             <!--       E     -->
 
 
-            <td>
+            <td colspan="2" class="bg-primary">
                 <h3>ขั้นตอนการส่งเสริมและพัฒนาอาชีพ</h3>
             </td>
             <td>
@@ -352,21 +429,21 @@
                 <td><label class="control-label"> วันที่
                         คณะอนุกรรมการจัดหาที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ e1</label>
                 </td>
-                <td><input class="form-control" type="date" name="e1"/></td>
+                <td><input class="form-control" type="date" name="e1" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่ คทช.จังหวัด ส่งรายงานผลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ
                         e2</label>
                 </td>
-                <td><input class="form-control" type="date" name="e2"/></td>
+                <td><input class="form-control" type="date" name="e2" required/></td>
             </tr>
 
             <tr>
                 <td><label class="control-label"> วันที่
                         คณะอนุกรรมการจัดที่ดินส่งข้อมูลให้คณะอนุกรรมการส่งเสริมและพัฒนาอาชีพ e3</label>
                 </td>
-                <td><input class="form-control" type="date" name="e3"/></td>
+                <td><input class="form-control" type="date" name="e3" required/></td>
             </tr>
 
 

@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,28 +47,37 @@
         </div>
     </div>
 
-    <hr>
+    <div class="row centered-form">
+        <div class="panel panel-primary">
 
-    <?php
 
-    ini_set('display_errors', 1);
-    error_reporting(~0);
+            <div class="panel-heading">
+                <h1 class="h3" > รายงานระบบติดตามประเมินผลโครงการจัดที่ดิน </h1>
+            </div>
+        <div class="panel-body">
+        <hr>
+            <?php
 
-    $strKeyword = null;
+            ini_set('display_errors', 1);
+            error_reporting(~0);
 
-    if (isset($_POST["txtKeyword"])) {
-        $strKeyword = $_POST["txtKeyword"];
-    }
-    ?>
-    <form name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
-        <table width="1000" border="1" align="center">
-            <tr>
-                <th>Keyword
-                    <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword; ?>">
-                    <input type="submit" value="ค้นหา"></th>
-            </tr>
-        </table>
-    </form>
+            $strKeyword = null;
+
+            if (isset($_POST["txtKeyword"])) {
+                $strKeyword = $_POST["txtKeyword"];
+            }
+            ?>
+            <form name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
+                <table width="1000" border="1" align="center">
+                    <tr class="bg-success">
+                        <th>พิมชื่อจังหวัดเพื่อทำการค้นหา
+                        <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword; ?>">
+                        <input type="submit" value="ค้นหา"></th>
+                    </tr>
+                </table>
+            </form>
+
+
 
     <br>
 
@@ -88,7 +98,7 @@
 
     ?>
     <table width="1000" border="1" align="center">
-        <tr>
+        <tr class="bg-primary">
             <th width="91">
                 <div align="center">จังหวัด</div>
             </th>
@@ -146,48 +156,9 @@
     mysqli_close($conn);
     ?>
 
-
-    <!--    <table class="table table-bordered table-responsive">-->
-    <!--        <form method="post" action="search.php" enctype="multipart/form-data" class="form-horizontal">-->
-    <!---->
-    <!---->
-    <!--            <tr>-->
-    <!--                <td><h1>รายงานระบบติดตามประเมินผลโครงการจัดที่ดิน</h1></td>-->
-    <!--                <td></td>-->
-    <!--            </tr>-->
-    <!---->
-    <!---->
-    <!--            <tr>-->
-    <!--                <td><label class="control-label">เลือกจังหวัด</label></td>-->
-    <!--                <td><select name="a1">-->
-    <!--                        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>-->
-    <!--                        <option value="ลำพูน">ลำพูน</option>-->
-    <!--                        <option value="พะเยา" selected>พะเยา</option>-->
-    <!--                        <option value="น่าน">น่าน</option>-->
-    <!--                    </select>-->
-    <!--                </td>-->
-    <!--            </tr>-->
-    <!--            <tr>-->
-    <!--                <td><label class="control-label"> เลือกพื้นที่ </label></td>-->
-    <!--                <td><input class="form-control" type="text" name="a2"/></td>-->
-    <!--            </tr>-->
-    <!--            </tr>-->
-    <!---->
-    <!--            <tr>-->
-    <!--                <td colspan="2">-->
-    <!--                    <button type="submit" name="btnsave" class="btn btn-default">-->
-    <!--                        <span class="glyphicon glyphicon-save"></span> &nbsp; ค้นหา-->
-    <!--                    </button>-->
-    <!--                </td>-->
-    <!--            </tr>-->
-    <!---->
-    <!---->
-    <!---->
-    <!--        </form>-->
-    <!--    </table>-->
-
-
-    <!-- Footer -->
+            </div>
+        </div>
+    </div>
     <?php include("footer.php"); ?>
 
 </div>
