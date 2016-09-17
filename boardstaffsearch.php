@@ -132,19 +132,19 @@
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $objResult["CustomerID"]; ?>">แก้ไข</a>
+                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">แก้ไข</a>
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $objResult["CustomerID"]; ?>">คลิก</a>
+                    <a href="viewreport.php?id=<?php echo $result["id"]; ?>">คลิก</a>
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $objResult["CustomerID"]; ?>">ลบ</a>
+                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">ลบ</a>
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $objResult["CustomerID"]; ?>">ปริ้น</a>
+                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">ปริ้น</a>
                 </td>
 
             </tr>
