@@ -403,7 +403,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
                         <tr>
                             <td><label class="control-label"> Text area f2 </label></td>
-                            <td><textarea name="f2" rows="4" cols="50" value="<?php echo $result["f2"]; ?>"></textarea></td>
+                            <td><textarea class="form-control" name="f2" rows="4" cols="50" ><?php echo $result['f2']; ?></textarea></td>
                         </tr>
 
 
