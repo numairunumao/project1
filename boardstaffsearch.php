@@ -132,7 +132,7 @@
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">แก้ไข</a>
+                    <a href="boardstaffedit.php?id=<?php echo $result["id"]; ?>">แก้ไข</a>
                 </td>
 
                 <td align="center">
