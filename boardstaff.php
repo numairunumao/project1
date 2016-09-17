@@ -40,8 +40,7 @@
 
 
     <div class="panel-heading">
-        <h1 class="h2" > ติดตามประเมินผลโครงการสำคัญ <a class="btn btn-default" href="#"> <span
-                    class="glyphicon glyphicon-eye-open"></span> &nbsp; ดูข้อมูลทั้งหมด </a></h1>
+        <h1 class="h2" > ติดตามประเมินผลโครงการสำคัญ</h1>
     </div>
 
 
