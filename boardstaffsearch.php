@@ -140,7 +140,7 @@
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">ลบ</a>
+                    <a href="delete.php?id=<?php echo $result["id"]; ?>" onclick="return confirm('คุณแน่ใจที่จะลบ ?')" >ลบ</a>
                 </td>
 
                 <td align="center">
