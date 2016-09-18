@@ -32,18 +32,12 @@
     </div>
 </nav>
 <?php
-$serverName = "localhost";
-$userName = "root";
-$userPassword = "";
-$dbName = "project1";
-$conn = mysqli_connect($serverName, $userName, $userPassword, $dbName);
-mysqli_set_charset($conn, "utf8");
-date_default_timezone_set('Asia/Bangkok');
 
+include_once 'dbconfig.php';
 $id = $_GET['id'];
 $sql = "SELECT * FROM dataFollow WHERE id = $id ";
 
-$query = mysqli_query($conn, $sql);
+$query = mysqli_query($mysqli, $sql);
 $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
 ?>
@@ -132,7 +126,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
                         <tr>
                             <td><label class="control-label"> การจัดทำข้อมูล b3 </label></td>
                             <td><input class="form-control" type="checkbox" name="b3"
-                                    <?php echo ($result["b3"]== "on" ? 'checked' : '');?>/></td>
+                                    <?php echo ($result["b3"]== "on" ? 'checked' : '');?>/>อยู่ระหว่างดำเนินการ</td>
                         </tr>
 
                         <tr>
@@ -174,7 +168,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td><label class="control-label"> การตรวจสอบและพิจารณาของ คทช.จังหวัด c4 </label></td>
                             <td><input class="form-control" type="checkbox" name="c4"
                                     <?php echo ($result["c4"]== "on" ? 'checked' : '');?>
-                                       value="<?php echo $result["c4"]; ?>"/>การตรวจสอบและพิจารณาของ คทช.จังหวัด</td>
+                                       />การตรวจสอบและพิจารณาของ คทช.จังหวัด</td>
                         </tr>
 
                         <tr>
@@ -310,7 +304,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
                             <td colspan="2"><input class="form-control" type="checkbox" name="d17" size="small"
                                     <?php echo ($result["d17"]== "on" ? 'checked' : '');?>
-                                                   value="<?php echo $result["d17"]; ?>">อยู่ระหว่างการกำหนดหลักเกณฑ์</td>
+                                                   >อยู่ระหว่างการกำหนดหลักเกณฑ์</td>
 
 
                         </tr>
@@ -325,7 +319,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td><label class="control-label"> การตรวจสอบและจัดทำข้อมูลคนของ คทช.จังหวัด d19 </label></td>
                             <td><input class="form-control" type="checkbox" name="d19"
                                     <?php echo ($result["d19"]== "on" ? 'checked' : '');?>
-                                       value="<?php echo $result["d19"]; ?>"/>อยู่ระหว่าง การตรวจสอบและจัดทำข้อมูล</td>
+                                      />อยู่ระหว่าง การตรวจสอบและจัดทำข้อมูล</td>
                         </tr>
 
 
@@ -403,7 +397,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
                         <tr>
                             <td><label class="control-label"> Text area f2 </label></td>
-                            <td><textarea class="form-control" name="f2" rows="4" cols="50" ><?php echo $result['f2']; ?></textarea></td>
+                            <td><textarea class="form-control" name="f2" rows="4" cols="50"><?php echo $result['f2']; ?></textarea></td>
                         </tr>
 
 

@@ -197,7 +197,7 @@
 
             <tr>
                 <td><label class="control-label"> การจัดทำข้อมูล b3 </label></td>
-                <td><input class="form-control" type="checkbox" name="b3"/></td>
+                <td><input class="form-control" type="checkbox" name="b3"/>อยู่ระหว่างดำเนินการ</td>
             </tr>
 
             <tr>

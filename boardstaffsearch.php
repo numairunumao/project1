@@ -83,18 +83,9 @@
 
     <?php
 
-    $serverName = "localhost";
-    $userName = "root";
-    $userPassword = "";
-    $dbName = "project1";
-    $conn = mysqli_connect($serverName, $userName, $userPassword, $dbName);
-    mysqli_set_charset($conn, "utf8");
-    date_default_timezone_set('Asia/Bangkok');
-
-
+    include_once 'dbconfig.php';
     $sql = "SELECT * FROM dataFollow WHERE a1 LIKE '%" . $strKeyword . "%' ";
-
-    $query = mysqli_query($conn, $sql);
+    $query = mysqli_query($mysqli, $sql);
 
     ?>
     <table width="1000" border="1" align="center">
@@ -153,7 +144,7 @@
         ?>
     </table>
     <?php
-    mysqli_close($conn);
+    mysqli_close($mysqli);
     ?>
 
             </div>

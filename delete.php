@@ -11,7 +11,8 @@ if (!$mysqli) {
 $sql = "DELETE FROM dataFollow WHERE id=$id";
 
 if (mysqli_query($mysqli, $sql)) {
-    echo "Record deleted successfully";
+    echo "ทำการลบข้อมูลเรียบร้อยแล้ว !!!";
+    header("refresh:2;boardstaffsearch.php");
 } else {
     echo "Error deleting record: " . mysqli_error($mysqli);
 }

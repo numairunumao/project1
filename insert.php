@@ -215,7 +215,8 @@ if (isset($_POST['btnsave'])) {
 
 
         if (mysqli_query($mysqli, $sql)) {
-            echo "New record created successfully";
+            echo "ลงทะเบียนข้อมูลใหม่เรียบร้อยแล้ว";
+            header("refresh:2;system.php");
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
         }

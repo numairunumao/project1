@@ -2,7 +2,7 @@
 <body>
 <?php
 
-require_once 'dbconfig.php';
+include_once 'dbconfig.php';
 
 error_reporting(0);
 
@@ -154,6 +154,7 @@ $strSQL .= ",d23 = '" . $_POST["d23"] . "' ";
 $strSQL .= ",e1 = '" . $_POST["e1"] . "' ";
 $strSQL .= ",e2 = '" . $_POST["e2"] . "' ";
 $strSQL .= ",e3 = '" . $_POST["e3"] . "' ";
+$strSQL .= ",f2 = '" . $_POST["f2"] . "' ";
 $strSQL .= ",b4 = '" . $userpic . "' ";
 $strSQL .= ",d16 = '" . $userpic2 . "' ";
 $strSQL .= ",d24 = '" . $userpic3 . "' ";
@@ -163,7 +164,6 @@ $strSQL .= "WHERE id = '" . $_POST["id"] . "' ";
 
 if (mysqli_query($mysqli, $strSQL)) {
     echo "แก้ไขข้อมูลเรียบร้อยแล้ว !!!";
-    echo $result["b4"];
     header("refresh:2;boardstaffsearch.php");
 } else {
     echo "Error Save [" . $strSQL . "]";
