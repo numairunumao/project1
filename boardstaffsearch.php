@@ -144,7 +144,7 @@
                 </td>
 
                 <td align="center">
-                    <a href="phpMySQLDeleteRecord.php?CusID=<?php echo $result["CustomerID"]; ?>">ปริ้น</a>
+                    <a href="pdf.php?id=<?php echo $result["id"]; ?>">ปริ้น</a>
                 </td>
 
             </tr>

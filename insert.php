@@ -64,7 +64,7 @@ if (isset($_POST['btnsave'])) {
     $e3 = $_POST['e3'];
 //
 //    $f1 = $_POST['f1'];  รูป
-   // $f2 = $_POST['f2'];
+    $f2 = $_POST['f2'];
 
 
 
