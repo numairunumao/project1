@@ -32,6 +32,13 @@
         <?php include("menu2.php"); ?>
     </div>
 </nav>
+<?php
+
+include_once 'dbconfig.php';
+$sql = "SELECT * FROM strategy1 WHERE id = '1' ";
+$query = mysqli_query($mysqli, $sql);
+$result = mysqli_fetch_array($query, MYSQLI_ASSOC)
+?>
 
 
 <div class="container">
@@ -56,51 +63,51 @@
                 </ul>
 
 
-
                 <div class="tab-content">
                     <div id="menu1" class="tab-pane fade in active">
                         <h3 align="center">ยุทธศาสตร์ที่ 1</h3>
 
-                        <form method="post" action="insertstrategy.php" enctype="multipart/form-data" class="form-horizontal">
+                        <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
+                              class="form-horizontal">
 
-                        <table class="table table-bordered table-responsive">
+                            <table class="table table-bordered table-responsive">
 
-                            <tr>
-                                <td><label class="control-label">พื้นที่ป่าไม้ (ไร่)</label></td>
-                                <td><input class="form-control" type="text" name="s11" required/></td>
-                            </tr>
+                                <tr>
+                                    <td><label class="control-label">พื้นที่ป่าไม้ (ไร่)</label></td>
+                                    <td><input class="form-control" type="text" name="s11"
+                                               value="<?php echo $result["s11"]; ?>"/></td>
+                                </tr>
 
-                            <tr>
-                                <td><label class="control-label">พื้นที่ที่ได้รับการประกาศใหม่ (ไร่)</label></td>
-                                <td><input class="form-control" type="text" name="s12" required/></td>
-                            </tr>
+                                <tr>
+                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศใหม่ (ไร่)</label></td>
+                                    <td><input class="form-control" type="text" name="s12"
+                                               value="<?php echo $result["s12"]; ?>"/></td>
+                                </tr>
 
-                            <tr>
-                                <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูปัจจุบัน (ไร่) </label></td>
-                                <td><input class="form-control" type="text" name="s13" required/></td>
-                            </tr>
+                                <tr>
+                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูปัจจุบัน
+                                            (ไร่) </label></td>
+                                    <td><input class="form-control" type="text" name="s13"
+                                               value="<?php echo $result["s13"]; ?>"/></td>
+                                </tr>
 
-                            <tr>
-                                <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ปัจจุบัน (ไร่)</label></td>
-                                <td><input class="form-control" type="text" name="s14" required/></td>
-                            </tr>
+                                <tr>
+                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ปัจจุบัน (ไร่)</label></td>
+                                    <td><input class="form-control" type="text" name="s14"
+                                               value="<?php echo $result["s14"]; ?>"/></td>
+                                </tr>
 
-                            <tr>
-                                <td align="center" colspan="2">
-                                    <button type="submit" name="btnsave1" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
-                                    </button>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <button type="submit" name="btnsave1" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
+                                        </button>
+                                    </td>
+                                </tr>
 
-                        </table>
+                            </table>
                         </form>
                     </div>
-
-
-
-
-
 
 
                     <div id="menu2" class="tab-pane fade">
