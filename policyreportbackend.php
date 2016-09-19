@@ -65,7 +65,6 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 ?>
 
 
-
 <div class="container">
 
     <div class="row centered-form">
@@ -98,28 +97,47 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <table class="table table-bordered table-responsive">
 
                                 <tr>
-                                    <td><label class="control-label">พื้นที่ป่าไม้ (ไร่)</label></td>
+                                    <td><label class="control-label">พื้นที่ป่าไม้</label></td>
                                     <td><input class="form-control" type="text" name="s11"
                                                value="<?php echo $result["s11"]; ?>"/></td>
+
+                                    <td><label class="control-label">พื้นที่ประเทศไทยทั้งหมด</label></td>
+                                    <td><input class="form-control" type="text" name="s11new"
+                                               value="<?php echo $result["s11new"]; ?>"/></td>
+
                                 </tr>
 
+
                                 <tr>
-                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศใหม่ (ไร่)</label></td>
+                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศใหม่</label></td>
                                     <td><input class="form-control" type="text" name="s12"
                                                value="<?php echo $result["s12"]; ?>"/></td>
+
+                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศเดิม</label></td>
+                                    <td><input class="form-control" type="text" name="s12new"
+                                               value="<?php echo $result["s12new"]; ?>"/></td>
                                 </tr>
+
 
                                 <tr>
                                     <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูปัจจุบัน
                                             (ไร่) </label></td>
                                     <td><input class="form-control" type="text" name="s13"
                                                value="<?php echo $result["s13"]; ?>"/></td>
+
+                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูเดิม</label></td>
+                                    <td><input class="form-control" type="text" name="s13new"
+                                               value="<?php echo $result["s13new"]; ?>"/></td>
+
                                 </tr>
 
                                 <tr>
-                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ปัจจุบัน (ไร่)</label></td>
+                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ปัจจุบัน</label></td>
                                     <td><input class="form-control" type="text" name="s14"
                                                value="<?php echo $result["s14"]; ?>"/></td>
+                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ เดิม</label></td>
+                                    <td><input class="form-control" type="text" name="s14new"
+                                               value="<?php echo $result["s14new"]; ?>"/></td>
                                 </tr>
 
                                 <tr>
@@ -178,13 +196,6 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                     <!--                    ______________________ ______________________ ______________________ ______________________ ______________________-->
 
 
-
-
-
-
-
-
-
                     <div id="menu3" class="tab-pane fade">
                         <h3>ยุทธศาสตร์ที่ 3</h3>
                         <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
@@ -193,21 +204,36 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <table class="table table-bordered table-responsive">
 
                                 <tr>
-                                    <td><label class="control-label"> จำนวนผู้ยากไร้ที่ไม่มีที่ดินทำกินลดลง </label></td>
+                                    <td><label class="control-label"> จำนวนผู้ยากไร้ที่ไม่มีที่ดินทำกินลดลง </label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s31"
                                                value="<?php echo $result3["s31"]; ?>"/></td>
+
+                                    <td><label class="control-label"> จำนวนผู่ไม่มีที่ดินทำกินสำรวจในปีก่อนหน้า </label>
+                                    </td>
+                                    <td><input class="form-control" type="text" name="s31new"
+                                               value="<?php echo $result3["s31new"]; ?>"/></td>
+
                                 </tr>
 
                                 <tr>
-                                    <td><label class="control-label"> มีการเข้าถึงการครอบครองที่ดินอย่างทั่วถึงเป็นธรรมมากขึ้น </label></td>
+                                    <td><label class="control-label">
+                                            มีการเข้าถึงการครอบครองที่ดินอย่างทั่วถึงเป็นธรรมมากขึ้น </label></td>
                                     <td><input class="form-control" type="text" name="s32"
                                                value="<?php echo $result3["s32"]; ?>"/></td>
+                                    <td><label class="control-label">
+                                            จำนวนผู้ที่อยู่ระหว่างขอจัดสรรที่ดิน สำรวจในปีก่อนหน้า </label></td>
+                                    <td><input class="form-control" type="text" name="s32new"
+                                               value="<?php echo $result3["s32new"]; ?>"/></td>
                                 </tr>
 
                                 <tr>
                                     <td><label class="control-label"> การบุกรุกที่ดินของรัฐลดลง </label></td>
                                     <td><input class="form-control" type="text" name="s33"
                                                value="<?php echo $result3["s33"]; ?>"/></td>
+                                    <td><label class="control-label"> ที่ดินรัฐที่ถูกบุกรุก สำรวจในปีก่อนหน้า </label></td>
+                                    <td><input class="form-control" type="text" name="s33new"
+                                               value="<?php echo $result3["s33new"]; ?>"/></td>
                                 </tr>
 
 
@@ -232,25 +258,32 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <table class="table table-bordered table-responsive">
 
                                 <tr>
-                                    <td><label class="control-label"> มีองค์กรในการขับเคลื่อนและบูรณาการนโยบายด้านการบริหารจัดการที่ดินและทรัพยากรดิน </label></td>
+                                    <td><label class="control-label">
+                                            มีองค์กรในการขับเคลื่อนและบูรณาการนโยบายด้านการบริหารจัดการที่ดินและทรัพยากรดิน </label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s41"
                                                value="<?php echo $result4["s41"]; ?>"/></td>
                                 </tr>
 
                                 <tr>
-                                    <td><label class="control-label"> มีระบบฐานข้อมูลที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ </label></td>
+                                    <td><label class="control-label">
+                                            มีระบบฐานข้อมูลที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ </label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s42"
                                                value="<?php echo $result4["s42"]; ?>"/></td>
                                 </tr>
 
                                 <tr>
-                                    <td><label class="control-label"> กฎหมายได้รับการพัฒนาและแก้ไขปรับปรุงให้สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประภาพ </label></td>
+                                    <td><label class="control-label">
+                                            กฎหมายได้รับการพัฒนาและแก้ไขปรับปรุงให้สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประภาพ </label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s43"
                                                value="<?php echo $result4["s43"]; ?>"/></td>
                                 </tr>
 
                                 <tr>
-                                    <td><label class="control-label"> มีการพัฒนาองค์ความรู้ด้านการบริหารจัดการที่ดินและทรัพยากรดิน </label></td>
+                                    <td><label class="control-label">
+                                            มีการพัฒนาองค์ความรู้ด้านการบริหารจัดการที่ดินและทรัพยากรดิน </label></td>
                                     <td><input class="form-control" type="text" name="s44"
                                                value="<?php echo $result4["s44"]; ?>"/></td>
                                 </tr>
