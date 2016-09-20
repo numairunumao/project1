@@ -3,6 +3,7 @@
 error_reporting(~E_NOTICE); // avoid notice
 
 require_once 'dbconfig.php';
+$message = "ทำการเพิ่มข้อมูลใหม่แล้ว !!!";
 
 if (isset($_POST['btnsave'])) {
 //    $username = $_POST['user_name'];// user name
@@ -215,8 +216,8 @@ if (isset($_POST['btnsave'])) {
 
 
         if (mysqli_query($mysqli, $sql)) {
-            echo "ลงทะเบียนข้อมูลใหม่เรียบร้อยแล้ว";
-            header("refresh:2;system.php");
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            header("refresh:1;system.php");
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
         }

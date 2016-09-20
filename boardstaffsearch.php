@@ -49,10 +49,22 @@
 
     <div class="row centered-form">
         <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="h3"><span class="glyphicon glyphicon-align-justify" ></span> รายงานระบบติดตามประเมินผลนโยบายและแผน 4 ยุทธศาสตร์</h1>
+            </div>
+            <div class="panel-body">
+                <a href="report.php"><span class="glyphicon glyphicon-triangle-right"></span> ยุทธศาสตร์ที่ 1 </a>
+                <a href="report2.php"><span class="glyphicon glyphicon-triangle-right"></span> ยุทธศาสตร์ที่ 2 </a>
+                <a href="report3.php"><span class="glyphicon glyphicon-triangle-right"></span> ยุทธศาสตร์ที่ 3 </a>
+                <a href="report4.php"><span class="glyphicon glyphicon-triangle-right"></span> ยุทธศาสตร์ที่ 4 </a>
+
+            </div>
+        </div>
+        <div class="panel panel-primary">
 
 
             <div class="panel-heading">
-                <h1 class="h3" > รายงานระบบติดตามประเมินผลโครงการจัดที่ดิน </h1>
+                <h1 class="h3" ><span class="glyphicon glyphicon-file"></span> รายงานระบบติดตามประเมินผลโครงการจัดที่ดิน </h1>
             </div>
         <div class="panel-body">
         <hr>

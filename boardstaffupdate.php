@@ -3,7 +3,7 @@
 <?php
 
 include_once 'dbconfig.php';
-
+$message = "แก้ไขข้อมูลเรียบร้อยแล้ว !!!";
 error_reporting(0);
 
 $sql = "SELECT * FROM dataFollow WHERE id = '" . $_POST["id"] . "' ";
@@ -163,8 +163,8 @@ $strSQL .= ",f1 = '" . $userpic4 . "' ";
 $strSQL .= "WHERE id = '" . $_POST["id"] . "' ";
 
 if (mysqli_query($mysqli, $strSQL)) {
-    echo "แก้ไขข้อมูลเรียบร้อยแล้ว !!!";
-    header("refresh:2;boardstaffsearch.php");
+    echo "<script type='text/javascript'>alert('$message');</script>";
+    header("refresh:1;boardstaffsearch.php");
 } else {
     echo "Error Save [" . $strSQL . "]";
 }
