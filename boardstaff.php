@@ -1,25 +1,17 @@
 <?php
 session_start();
+error_reporting(0);
 
+if (!$_SESSION) {
 
-if ($_SESSION["role"] == 'staff') {
-
-    echo "hello board staff";
-
-}
-
-else if ($_SESSION["role"] == 'board')
-
-{
-    echo "hello board staff";
+    $message = "ต้องเข้าสู่ระบบก่อน";
+    echo "<script type='text/javascript'>alert('$message') ;</script> ";
+    header("refresh:1;login.php");
 
 }
-else  {
 
-    echo "You are not board staff";
-    exit();
-}
 ?>
+
 
 
 <!DOCTYPE html>

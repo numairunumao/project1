@@ -47,9 +47,10 @@ if ($objResult)
 
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
-        echo $_SESSION["role"];
-        echo $_SESSION["id"];
-        header("location:policyreportbackend.php");
+        $_SESSION["name"] = $objResult["name"];
+        $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้บริหาร)";
+        echo "<script type='text/javascript'>alert('$message') ;</script> ";
+        header("refresh:1;policyreportbackend.php");
 
     }
 
@@ -58,9 +59,9 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
-        echo $_SESSION["role"];
-        echo $_SESSION["id"];
-        header("location:boardstaff.php");   // BOARD
+        $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้ปฏิบัติงาน)";
+        echo "<script type='text/javascript'>alert('$message') ;</script> ";
+        header("refresh:1;boardstaff.php");   // BOARD
     }
 
     else if ($objResult["role"] == "staff")
@@ -68,9 +69,9 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
-        echo $_SESSION["role"];
-        echo $_SESSION["id"];
-        header("location:boardstaff.php");
+        $message = "ยินดีต้อนรับเข้าสู่ระบบ (กรรมการ)";
+        echo "<script type='text/javascript'>alert('$message') ;</script> ";
+        header("refresh:1;boardstaff.php");
     }
 
 }
@@ -78,7 +79,10 @@ if ($objResult)
 else
 
 {
-    echo "Username and Password Incorrect!";
+    $message = "ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง";
+    echo "<script type='text/javascript'>alert('$message') ;</script> ";
+    header("refresh:1;login.php");
+    session_destroy();
 }
 
 

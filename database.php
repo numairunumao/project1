@@ -2,17 +2,10 @@
 session_start();
 
 
-if ($_SESSION["role"] == 'ceo') {
-
-    echo "ceo";
-
-} else if ($_SESSION["role"] == 'board') {
-    echo "board";
-
-} else {
-
-    echo "You are not allow to visit this page";
-    exit();
+if (!$_SESSION) {
+    $message = "ต้องเข้าสู่ระบบก่อน";
+    echo "<script type='text/javascript'>alert('$message') ;</script> ";
+    header("refresh:1;login.php");
 }
 
 ?>

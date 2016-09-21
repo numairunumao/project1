@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+error_reporting(0);
+?>
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -20,26 +23,49 @@
                 <li>
                     <a href="index.php">หน้าแรก</a>
                 </li>
-                <li>
-                    <a href="policyreport.php">ระบบติดตามประเมินผลนโยบายและแผน</a>
-                </li>
-                <li>
-                    <a href="boardstaff.php">ระบบติดตามประเมินผลโครงการจัดที่ดิน [กรรมการ / สตาฟ ]</a>
-                </li>
+                <?php
+                if (!$_SESSION)
+                    echo " <li>
+                    <a href=\"login.php\">เข้าสู่ระบบ</a>
+                </li>";
+                ?>
+                <?php
+                if ($_SESSION)
+                    echo " <li>
+                    <a href=\"policyreport.php\">ระบบติดตามประเมินผลนโยบายและแผน</a>
+                </li>";
+                ?>
+                <?php
+                    if ($_SESSION["role"] == "ceo")
+                    echo " <li>
+                    <a href=\"policyreportbackend.php\">กรอกผลประเมิณนโยบายและแผน</a>
+                </li>";
+                ?>
 
-                <li>
-                    <a href="database.php">ฐานข้อมูลภูมิสารสนเทศ</a>
-                </li>
-                <li>
-                    <a href="boardstaffsearch.php">ระบบนำเสนอรายงาน</a>
-                </li>
-
-                <li>
-
-
-                    <a href="logout.php">Log out
-                    </a>
-                </li>
+                <?php
+                if ($_SESSION["role"] == "staff" || $_SESSION["role"] == "board")
+                    echo " <li>
+                    <a href=\"boardstaff.php\">ระบบติดตามประเมินผลโครงการจัดที่ดิน</a>
+                </li>";
+                ?>
+                <?php
+                if ($_SESSION["role"] == "ceo" || $_SESSION["role"] == "staff")
+                    echo " <li>
+                    <a href=\"database.php\">ฐานข้อมูลภูมิสารสนเทศ</a>
+                </li>";
+                ?>
+                <?php
+                if ($_SESSION)
+                    echo " <li>
+                    <a href=\"boardstaffsearch.php\">ระบบนำเสนอรายงาน</a>
+                </li>";
+                ?>
+                <?php
+                if ($_SESSION)
+                    echo " <li>
+                    <a href=\"logout.php\">ออกจากระบบ</a>
+                </li>";
+                ?>
 
             </ul>
         </div>
