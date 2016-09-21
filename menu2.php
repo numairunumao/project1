@@ -21,18 +21,24 @@
                     <a href="index.php">หน้าแรก</a>
                 </li>
                 <li>
-                    <a href="policyreport.php">ระบบติดตามประเมินผลนโยบายและแผน [ผอ.]</a>
+                    <a href="policyreport.php">ระบบติดตามประเมินผลนโยบายและแผน</a>
                 </li>
                 <li>
                     <a href="boardstaff.php">ระบบติดตามประเมินผลโครงการจัดที่ดิน [กรรมการ / สตาฟ ]</a>
                 </li>
 
-
                 <li>
-                    <a href="#">ฐานข้อมูลภูมิสารสนเทศ</a>
+                    <a href="database.php">ฐานข้อมูลภูมิสารสนเทศ</a>
                 </li>
                 <li>
                     <a href="boardstaffsearch.php">ระบบนำเสนอรายงาน</a>
+                </li>
+
+                <li>
+
+
+                    <a href="logout.php">Log out
+                    </a>
                 </li>
 
             </ul>

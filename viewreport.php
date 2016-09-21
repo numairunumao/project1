@@ -5,7 +5,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM dataFollow where id = $id");
 $row = mysqli_fetch_array($result);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 

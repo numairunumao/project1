@@ -28,6 +28,15 @@ ob_start();
 </head>
 
 <body>
+
+<?php
+
+include_once 'dbconfig.php';
+$sql = "SELECT * FROM strategy2 WHERE id = '1' ";
+$query = mysqli_query($mysqli, $sql);
+$result2 = mysqli_fetch_array($query, MYSQLI_ASSOC)
+?>
+
 <div class="container">
 <h5 align="right">ระบบติดตามประเมินผลนโยบายและแผน</h5>
 <br>
@@ -35,39 +44,59 @@ ob_start();
     <table border="1" width="100%" align="center">
 
         <tr>
-            <td align="center" colspan="5">
-            <h4> ยุทธศาสตร์ที่ 2 : ด้านการใช้ที่ดินและทรัพยากรดินเพื่อให้เกิดประโยชน์สูงสุดและเป็นธรรม</h4><br>
-            เพื่อเพิ่มประสิทธิภาพการใช้ที่ดินและทรัพยากรดินให้เกิดประโยชน์สูงสุด ลดปัญหาการทอดทิ้งไม่ทำประโยชน์ หรือปล่อยที่ดินให้เป็นที่รกร้างว่างเปล่า
-            ลดปัญหาขนาดการถือครองและเพิ่มความเป็นธรรมต่อเจ้าของที่ดินและลดปัญหาการใช้ที่ดินผิดประเภท
+            <td align="center" colspan="6" class="bg-success">
+                <h4> ยุทธศาสตร์ที่ 2 :
+                    ด้านการใช้ที่ดินและทรัพยากรดินเพื่อให้เกิดประโยชน์สูงสุดและเป็นธรรม</h4><br>
+                เพื่อเพิ่มประสิทธิภาพการใช้ที่ดินและทรัพยากรดินให้เกิดประโยชน์สูงสุด
+                ลดปัญหาการทอดทิ้งไม่ทำประโยชน์ หรือปล่อยที่ดินให้เป็นที่รกร้างว่างเปล่า
+                ลดปัญหาขนาดการถือครองและเพิ่มความเป็นธรรมต่อเจ้าของที่ดินและลดปัญหาการใช้ที่ดินผิดประเภท
             </td>
         </tr>
 
-        <tr bgcolor="#D5D5D5">
-            <td align="center" >ตัวชี้วัด</td>
-            <td align="center" colspan="3" >สรุปผลการดำเนินงาน</td>
-            <td align="center" >การประเมินผล</td>
+        <tr class="bg-primary">
+            <td align="center">ตัวชี้วัด</td>
+            <td align="center" colspan="3">สรุปผลการดำเนินงาน</td>
+            <td align="center">การประเมินผล</td>
         </tr>
         <tr>
             <td align="center">1. มีการใช้ที่ดินที่เหมาะสมกับศักยภาพและสมรรถนะของทรัพยากรดิน</td>
             <td align="center">จำนวนที่ดินที่ใช้อย่างเหมาะสม</td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างรวบรวมข้อมูล</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result2["s21"]; ?></td>
             <td align="center">แปลง</td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างการประเมินผล</td>
+            <td align="center" bgcolor="#D5D5D5"><?php
+                if ($result2["s21"] > 0) {
+                    echo "ผ่าน";
+                } else {
+                    echo "ไม่ผ่าน";
+                } ?></td>
         </tr>
         <tr>
-            <td align="center">2. ที่ดินที่ถูกทิ้งร้าง หรือไม่มีการใช้ประโยชน์ ได้นํามาใช้ประโยชน์มากขึ้น</td>
+            <td align="center">2. ที่ดินที่ถูกทิ้งร้าง หรือไม่มีการใช้ประโยชน์ ได้นํามาใช้ประโยชน์มากขึ้น
+            </td>
             <td align="center">จำนวนที่ดินที่นำมาใช้ประโยชน์</td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างรวบรวมข้อมูล</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result2["s22"]; ?></td>
             <td align="center">แปลง</td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างการประเมินผล</td>
+            <td align="center" bgcolor="#D5D5D5"><?php
+                if ($result2["s22"] > 0) {
+                    echo "ผ่าน";
+                } else {
+                    echo "ไม่ผ่าน";
+                } ?></td>
         </tr>
 
         <tr>
-            <td align="center">3. ที่ดินที่มีปัญหาและขาดความอุดมสมบูรณ์ ได้รับการพัฒนาและฟื้นฟูคุณภาพของทรัพยากรดินเพื่อนํามาใช้ประโยชน์</td>
-            <td align="center">จำนวนที่ดินที่ได้รับการฟื้นฟู </td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างรวบรวมข้อมูล</td>
+            <td align="center">3. ที่ดินที่มีปัญหาและขาดความอุดมสมบูรณ์
+                ได้รับการพัฒนาและฟื้นฟูคุณภาพของทรัพยากรดินเพื่อนํามาใช้ประโยชน์
+            </td>
+            <td align="center">จำนวนที่ดินที่ได้รับการฟื้นฟู</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result2["s23"]; ?></td>
             <td align="center">แปลง</td>
-            <td align="center" bgcolor="#D5D5D5">อยู่ระหว่างการประเมินผล</td>
+            <td align="center" bgcolor="#D5D5D5"><?php
+                if ($result2["s23"] > 0) {
+                    echo "ผ่าน";
+                } else {
+                    echo "ไม่ผ่าน";
+                } ?></td>
         </tr>
 
 

@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+
+if ($_SESSION["role"])
+{
+
+    echo "hello CEO";
+
+} else {
+
+    echo "You are not CEO";
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,7 +143,8 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <td><input class="form-control" type="text" name="s13"
                                                value="<?php echo $result["s13"]; ?>"/></td>
 
-                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูเดิม</label></td>
+                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูเดิม</label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s13new"
                                                value="<?php echo $result["s13new"]; ?>"/></td>
 
@@ -231,7 +250,8 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <td><label class="control-label"> การบุกรุกที่ดินของรัฐลดลง </label></td>
                                     <td><input class="form-control" type="text" name="s33"
                                                value="<?php echo $result3["s33"]; ?>"/></td>
-                                    <td><label class="control-label"> ที่ดินรัฐที่ถูกบุกรุก สำรวจในปีก่อนหน้า </label></td>
+                                    <td><label class="control-label"> ที่ดินรัฐที่ถูกบุกรุก สำรวจในปีก่อนหน้า </label>
+                                    </td>
                                     <td><input class="form-control" type="text" name="s33new"
                                                value="<?php echo $result3["s33new"]; ?>"/></td>
                                 </tr>
