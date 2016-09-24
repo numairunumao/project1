@@ -59,7 +59,7 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
-        $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้ปฏิบัติงาน)";
+        $message = "ยินดีต้อนรับเข้าสู่ระบบ (กรรมการ)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
         header("refresh:1;boardstaff.php");   // BOARD
     }
@@ -69,7 +69,7 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
-        $message = "ยินดีต้อนรับเข้าสู่ระบบ (กรรมการ)";
+        $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้ปฏิบัติงาน)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
         header("refresh:1;boardstaff.php");
     }

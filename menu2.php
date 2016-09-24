@@ -49,7 +49,7 @@ error_reporting(0);
                 </li>";
                 ?>
                 <?php
-                if ($_SESSION["role"] == "ceo" || $_SESSION["role"] == "staff")
+                if ($_SESSION["role"] == "ceo" || $_SESSION["role"] == "board")
                     echo " <li>
                     <a href=\"database.php\">ฐานข้อมูลภูมิสารสนเทศ</a>
                 </li>";
