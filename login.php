@@ -2,47 +2,38 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="cssmodify/login.css">
+
 </head>
 
-<div class="login-page">
+<div class="container">
+    <br>
 
-    <div class="form">
+<!--    <div align="center"><p><b>เข้าสู่ระบบ<b></p></div>-->
 
-        <form name="form1" method="post" action="check_login.php">
-            <input name="txtUsername" type="text" placeholder="username"/>
-            <input name="txtPassword" type="password" placeholder="password"/>
-            <button>login</button>
-        </form>
+    <div class="login-page">
 
+        <div align="center" class="form">
+
+            <form name="form1" method="post" action="check_login.php">
+                <input name="txtUsername" type="text" placeholder="username"/>
+                <input name="txtPassword" type="password" placeholder="password"/>
+                <button>login</button>
+            </form>
+
+        </div>
     </div>
+
+
 </div>
 
+
 <script>
-$('.message a').click(function(){
-$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
+    $('.message a').click(function () {
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
 </script>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--<html>-->

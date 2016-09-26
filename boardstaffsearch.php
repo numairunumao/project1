@@ -38,7 +38,7 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container" style="width: 1200px">
     <!-- Portfolio Item Heading -->
     <div class="row">
         <div class="col-lg-12">
@@ -60,6 +60,9 @@
 
             </div>
         </div>
+
+
+
         <div class="panel panel-primary">
 
 

@@ -1,3 +1,15 @@
+
+<?php
+session_start();
+error_reporting(0);
+
+if (!$_SESSION) {
+    $message = "ต้องเข้าสู่ระบบก่อน";
+    echo "<script type='text/javascript'>alert('$message') ;</script> ";
+    header("refresh:1;login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

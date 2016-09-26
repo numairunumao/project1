@@ -8,7 +8,8 @@ error_reporting(0);
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -36,7 +37,7 @@ error_reporting(0);
                 </li>";
                 ?>
                 <?php
-                    if ($_SESSION["role"] == "ceo")
+                if ($_SESSION["role"] == "ceo")
                     echo " <li>
                     <a href=\"policyreportbackend.php\">กรอกผลประเมิณนโยบายและแผน</a>
                 </li>";
@@ -48,12 +49,35 @@ error_reporting(0);
                     <a href=\"boardstaff.php\">ระบบติดตามประเมินผลโครงการจัดที่ดิน</a>
                 </li>";
                 ?>
+
+
+
                 <?php
                 if ($_SESSION["role"] == "ceo" || $_SESSION["role"] == "board")
-                    echo " <li>
-                    <a href=\"database.php\">ฐานข้อมูลภูมิสารสนเทศ</a>
+                    echo "  <li class=\"dropdown\">
+                    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">ฐานข้อมูลภูมิสารสนเทศ
+                        <span class=\"caret\"></span></a>
+                    <ul class=\"dropdown-menu\">
+                        <li><a href=\"allprovince.php\">ฐานข้อมูลภูมิสารสนเทศเกี่ยวกับการบริหารจัดการที่ดินของประเทศ</a></li>
+                        <li><a href=\"provincearea.php\">ฐานข้อมูลภูมิสารสนเทศโครงการจัดที่ดินทำกินตามนโยบายคณะกรรมการที่ดินแห่งชาติ</a></li>
+                    </ul>
                 </li>";
                 ?>
+
+
+
+
+
+
+
+
+                <?php
+                if ($_SESSION["role"] == "board")
+                    echo " <li>
+                    <a href=\"uploadbackend.php\">อัพโหลด ฐานข้อมูลภูมิสารสนเทศ</a>
+                </li>";
+                ?>
+
                 <?php
                 if ($_SESSION)
                     echo " <li>

@@ -70,22 +70,30 @@ if (!$_SESSION) {
                                 </h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body"><?php
+                                <div class="panel-heading"><?php
 
                                     require_once 'dbconfig.php';
-                                    $sql = "SELECT * FROM dataFollow";
+                                    $sql = "SELECT * FROM allprovince";
                                     $query = mysqli_query($mysqli, $sql);
 
                                     while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-                                        echo '<p><a href="user_images/' . $result['b4'] . '" target="_blank">' . $result['b4'] . '</a></p>';
-                                        echo '<p><a href="user_images/' . $result['d16'] . '" target="_blank">' . $result['d16'] . '</a></p>';
-                                        echo '<p><a href="user_images/' . $result['d24'] . '" target="_blank">' . $result['d24'] . '</a></p>';
-                                        echo '<p><a href="user_images/' . $result['f1'] . '" target="_blank">' . $result['f1'] . '</a></p>';
+                                        echo '<p><a href="province_image/' . $result['province_image'] . '" target="_blank">' . $result['province_image'] . '</a></p>';
+//                                        echo '<p><a href="user_images/' . $result['d16'] . '" target="_blank">' . $result['d16'] . '</a></p>';
+//                                        echo '<p><a href="user_images/' . $result['d24'] . '" target="_blank">' . $result['d24'] . '</a></p>';
+//                                        echo '<p><a href="user_images/' . $result['f1'] . '" target="_blank">' . $result['f1'] . '</a></p>';
                                     }
                                     ?>
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
+
+
+
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
@@ -94,10 +102,151 @@ if (!$_SESSION) {
                                 </h4>
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">
+                                <div class="panel-heading">
 
 
-                                    <p>Hello world </p>
+
+                                    <div class="panel panel-primary">
+
+
+                                        <div class="panel-heading">
+                                            <h1 class="h3" ><span class="glyphicon glyphicon-file"></span> ระบบค้นหาฐานข้อมูลภูมิสารสนเทศโครงการจัดที่ดินทำกินตามนโยบายคณะกรรมการที่ดินแห่งชาติ </h1>
+                                        </div>
+                                        <div class="panel-body">
+
+                                            <?php
+
+                                            ini_set('display_errors', 1);
+                                            error_reporting(~0);
+
+                                            $strKeyword = null;
+
+                                            if (isset($_POST["txtKeyword"])) {
+                                                $strKeyword = $_POST["txtKeyword"];
+                                            }
+                                            ?>
+                                            <form name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
+                                                <table width="1000" border="1" align="center">
+                                                    <tr class="bg-success">
+                                                        <th>พิมชื่อจังหวัดเพื่อทำการค้นหา
+                                                            <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword; ?>">
+                                                            <input type="submit" value="ค้นหา"></th>
+                                                    </tr>
+                                                </table>
+                                            </form>
+
+
+
+                                            <br>
+
+                                            <?php
+
+                                            include_once 'dbconfig.php';
+                                            $sql = "SELECT * FROM provincearea WHERE province LIKE '%" . $strKeyword . "%' ";
+                                            $query = mysqli_query($mysqli, $sql);
+
+                                            ?>
+                                            <table width="1000" border="1" align="center">
+                                                <tr class="bg-primary">
+                                                    <th width="91">
+                                                        <div align="center">จังหวัด</div>
+                                                    </th>
+                                                    <th width="91">
+                                                        <div align="center">ชื่อพื้นที่</div>
+                                                    </th>
+                                                    <th width="38">
+                                                        <div align="center">ไฟล์แผนที่</div>
+                                                    </th>
+
+                                                </tr>
+
+                                                <?php
+                                                while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
+                                                    ?>
+                                                    <tr>
+                                                        <td>
+                                                            <div align="center"><?php echo $result["province"]; ?></div>
+                                                        </td>
+
+                                                        <td>
+                                                            <div align="center"><?php echo $result["area"]; ?></div>
+                                                        </td>
+
+                                                        <td align="center">
+                                                            <a href="boardstaffedit.php?id=<?php echo $result["id"]; ?>">ดู</a>
+                                                        </td>
+
+
+
+                                                    </tr>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </table>
+                                            <?php
+                                            mysqli_close($mysqli);
+                                            ?>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!--                                    --><?php
+                                    //
+                                    //                                    require_once 'dbconfig.php';
+                                    //                                    $sql = "SELECT * FROM provincearea";
+                                    //                                    $query = mysqli_query($mysqli, $sql);
+                                    //
+                                    //                                    while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
+                                    //                                        echo 'ชื่อจังหวัด : ', $result['province'], '<br>', 'ชื่อพื้นที่ : ', $result['area'], '<p>ไฟล์แผนที่ : <a href="province_area_image/' . $result['province_image2'] . '" target="_blank">' . $result['province_image2'] . '</a></p>';
+                                    ////
+                                    //                                    }
+                                    //                                    ?>
+
+
 
 
                                 </div>

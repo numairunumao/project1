@@ -9,115 +9,259 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Portfolio Item - Start Bootstrap Template</title>
+    <title> localhost </title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="navcss/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="navcss/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
-<body>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-           <?php include("menu.php"); ?>
-        </div>
-        <!-- /.container -->
-    </nav>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Page Content -->
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Portfolio Item
-                    <small>Item Subheading</small>
-                </h1>
-            </div>
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">หน้าแรก</a>
         </div>
-        <!-- /.row -->
 
-        <!-- Portfolio Item Row -->
-        <div class="row">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 
-            <div class="col-md-8">
-                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-            </div>
 
-            <div class="col-md-4">
-                <h3>Project Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Project Details</h3>
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
-            </div>
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">เกี่ยวกับโครงการ</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">กิจกรรมของโครงการ</a>
+                </li>
 
+
+                <li>
+                    <a href="boardstaff.php">[ ระบบติดตามประเมินผล ]</a>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ระบบสนับสนุนการตัดสินใจ
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ขั้นตอนการอนุญาต / จัดทำสัญญาตามประเภทที่ดิน</a></li>
+                        <li><a href="#">ข้อพิจรณาความเหมาะสมของดินในการปลูกพืช</a></li>
+                        <li><a href="#">ข้อเสนอแนะในการพัฒนาและปรับปรุงคุณภาพดิน</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ดาวน์โหลดเอกสาร
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ขั้นตอนการอนุญาต / จัดทำสัญญาตามประเภทที่ดิน</a></li>
+                        <li><a href="#">ข้อพิจรณาความเหมาะสมของดินในการปลูกพืช</a></li>
+                        <li><a href="#">ข้อเสนอแนะในการพัฒนาและปรับปรุงคุณภาพดิน</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ลิ้งค์ที่เกี่ยวข้อง
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ขั้นตอนการอนุญาต / จัดทำสัญญาตามประเภทที่ดิน</a></li>
+                        <li><a href="#">ข้อพิจรณาความเหมาะสมของดินในการปลูกพืช</a></li>
+                        <li><a href="#">ข้อเสนอแนะในการพัฒนาและปรับปรุงคุณภาพดิน</a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a class="page-scroll" href="#contact">ติดต่อเรา</a>
+                </li>
+
+            </ul>
         </div>
-        <!-- /.row -->
-
-        <!-- Related Projects Row -->
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <?php include("footer.php"); ?>
-
+        <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
+</nav>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="container">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!--        <img src="images/moutain.jpg" alt="HTML5 Icon" width="1200" height="600"  align="auto" style="width: 1200px">-->
+<!--        <h1> ระบบการติดตามและประเมินผลด้านการบริหารจัดการที่ดิน-->
+<!--            และทรัพยากรดินของประเทศ </h1>-->
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1><b>เกี่ยวกับโครงการ</b></h1>
+                <br>
+                <p><b>ที่มา และ วัตถุประสงค์ของโครงการ</b></p>
+                <p align="left">ที่มา และวัตถุประสงค์ของโครงการ
+                    จากสถานการณ์ปัญหาของระบบการบริหารจัดการที่ดินของประเทศไทยที่มีหน่วยงานการบริหารจัดการที่ดินที่กระจายอยู่ในส่วนราชการต่างๆ
+                    ขาดความเป็นเอกภาพ
+                    เครื่องมือที่มีอยู่มีข้อจำกัดต่อการบริหารจัดการที่ดินที่มีประสิทธิภาพและสร้างความเป็นธรรมในสังคม
+                    วัตถุประสงค์ของโครงการ
+                    </p>
+                <button type="button" class="btn btn-success">รายละเอียด</button>
+            </div>
+
+            <div class="col-lg-12">
+
+                <p><b>ผังกระบวนการและขั้นตอนการดำเนินงาน</b></p>
+                <p align="left">กระบวนการจัดทำ ร่างนโยบายและแผนการบริหารจัดการที่ดินและทรัพยากรดินของประเทศประกอบด้วย
+                    กลุ่มเป้าหมายจากผู้แทนทุกภาคส่วนที่กี่ยวข้องกับการบริหารจัดการที่ดินและทรัพยากรดิน ได้แก่
+                    ผู้แทนจากหน่วยงานภาครัฐ หน่วยงานในคณะอนุกรรมการ ภายใต้คณะกรรมการนโยบายที่ดินแห่งชาติ ...</p>
+                <button type="button" class="btn btn-success">รายละเอียด</button>
+            </div>
+
+            <div class="col-lg-12">
+                <p><b>การขับเคลื่อนและการติดตามประเมินผล</b></p>
+                <p align="left">กระบวนการจัดทำ ร่างนโยบายและแผนการบริหารจัดการที่ดินและทรัพยากรดินของประเทศประกอบด้วย
+                    กลุ่มเป้าหมายจากผู้แทนทุกภาคส่วนที่กี่ยวข้องกับการบริหารจัดการที่ดินและทรัพยากรดิน ได้แก่
+                    ผู้แทนจากหน่วยงานภาครัฐ หน่วยงานในคณะอนุกรรมการ ภายใต้คณะกรรมการนโยบายที่ดินแห่งชาติ</p>
+                <button type="button" class="btn btn-success">รายละเอียด</button>
+            </div>
+
+
+            <div class="col-lg-12">
+                <p><b>สถานการณ์และแนวโน้มปัญหาที่ดินและทรัพยากรดิน</b></p>
+                <p align="left">ที่ดินและทรัพยากรดินเป็นปัจจัยพื้นฐานสำคัญของการพัฒนาเศรษฐกิจ สังคม และความอยู่ดีมีสุข
+                    ของประชาชนในประเทศ ที่ดินจึงเป็นทรัพยากรที่มีความสำคัญต่อการดำรงชีวิตของประชาชนและการพัฒนาประเทศ
+                    ...</p>
+                <button type="button" class="btn btn-success">รายละเอียด</button>
+            </div>
+
+
+
+            <div class="col-lg-12">
+                <p><b>นโยบายและแผนการบริหารจัดการที่ดินและทรัพยากรดินของประเทศ</b></p>
+                <p align="left">การบริหารจัดการที่ดินและทรัพยากรดินของประเทศ ที่เกิดประโยชน์สูงสุด สมดุล เป็นธรรมและยั่งยืน
+                    ทั้งในด้านเศรษฐกิจ สังคม สิ่งแวดล้อม และความมั่นคงของประเทศ...</p>
+                <button type="button" class="btn btn-success">รายละเอียด</button>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>กิจกรรม ของโครงการ</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+
+
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+
+
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+                <div class="col-sm-4">
+                    One of three columns
+                    <button type="button" class="btn btn-success">รายละเอียด</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" align="center
+        ">
+                <small><i>ติดต่อเรา
+                        สำนักงานนโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม
+                        <br>
+                        60 / 1 ซอยพิบูลวัฒนา ซอย 7 ถนนพระราม 60
+                        แขวงสามเสนใน เขตพญาไท กรุงเทพมหานคร 10400
+                        <br>
+                        โทรศัพท์ : 0 2265 6548 โทรสาร : 0 2265 6544</i></small>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- jQuery -->
+<script src="navjs/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="navjs/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="navjs/jquery.easing.min.js"></script>
+<script src="navjs/scrolling-nav.js"></script>
 
 </body>
 
