@@ -33,6 +33,13 @@ if (!$_SESSION) {
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <link href="css/page.css" rel="stylesheet">
     <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            font-size: 14px;
+        }
+    </style>
 
 </head>
 

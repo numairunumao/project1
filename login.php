@@ -15,7 +15,7 @@
         <div align="center" class="form">
 
             <form name="form1" method="post" action="check_login.php">
-                <input name="txtUsername" type="text" placeholder="username"/>
+                <input name="txtUsername" type="text" placeholder="username" autofocus/>
                 <input name="txtPassword" type="password" placeholder="password"/>
                 <button>login</button>
             </form>

@@ -35,7 +35,7 @@ if (!$_SESSION) {
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <style>
         body {
-            font-family: 'Kanit', serif;
+            font-family: 'Kanit', sans-serif;
             font-size: 14px;
         }
     </style>
@@ -91,10 +91,9 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
 
             <div class="panel-heading">
-                <h1 class="h2"> นโยบายและแผน</h1>
+                <h1 class="h2"> กรอกผลประเมิน นโยบายและแผน</h1>
             </div>
-
-
+            <br>
             <div class="container">
 
 
@@ -118,37 +117,37 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                 <div class="divTableBody">
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>1.1 พื้นที่ป่าไม้</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a1"
+                                                                         value="<?php echo $result["a1"]; ?>"/></div>
                                         <div class="divTableCell"><b>ไร่</b></div>
 
                                     </div>
 
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>1.2 พื้นที่ประเทศไทยทั้งหมด</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a2"
+                                                                         value="<?php echo $result["a2"]; ?>"/></div>
                                         <div class="divTableCell"><b>ไร่</b></div>
                                     </div>
 
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>2.1 อุทยานแห่งชาติ</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a3"
+                                                                         value="<?php echo $result["a3"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a4"
+                                                                         value="<?php echo $result["a4"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a5"
+                                                                         value="<?php echo $result["a5"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
@@ -156,66 +155,66 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>2.2 เขตรักษาพันธ์ุสัตว์ป่า</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a6"
+                                                                         value="<?php echo $result["a6"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a7"
+                                                                         value="<?php echo $result["a7"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a8"
+                                                                         value="<?php echo $result["a8"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>2.3 วนอุทยาน</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a9"
+                                                                         value="<?php echo $result["a9"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a10"
+                                                                         value="<?php echo $result["a10"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a11"
+                                                                         value="<?php echo $result["a11"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>2.4 เขตห้ามล่าสัตว์ป่า</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a12"
+                                                                         value="<?php echo $result["a12"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a13"
+                                                                         value="<?php echo $result["a13"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a14"
+                                                                         value="<?php echo $result["a14"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
@@ -224,15 +223,15 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                         <div class="divTableCell"><b>2.5 เขตป่าสงวนแห่งชาติ
                                                 ที่กำหนดเป็นเขตป่าเพื่อการอนุรักษ์</b>
                                         </div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a15"
+                                                                         value="<?php echo $result["a15"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a16"
+                                                                         value="<?php echo $result["a16"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
@@ -240,23 +239,23 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>3.1 พื้นที่ป่าเสื่อมโทรมี่ได้รับการสำรวจ</b></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a17"
+                                                                         value="<?php echo $result["a17"]; ?>"/></div>
                                         <div class="divTableCell"><b>แห่ง</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a18"
+                                                                         value="<?php echo $result["a18"]; ?>"/></div>
                                         <div class="divTableCell"><b><b>เนื้อที่ ตาราง กม.</b></b>
                                         </div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a19"
+                                                                         value="<?php echo $result["a19"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
@@ -264,21 +263,21 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <div class="divTableRow">
                                         <div class="divTableCell"><b>3.2 พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟู</b>
                                         </div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a20"
+                                                                         value="<?php echo $result["a20"]; ?>"/></div>
                                         <div class="divTableCell"><b>จำนวนโครงการ/จำนวนแปลง</b></div>
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a21"
+                                                                         value="<?php echo $result["a21"]; ?>"/></div>
                                         <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a22"
+                                                                         value="<?php echo $result["a22"]; ?>"/></div>
                                         <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
 
                                     </div>
@@ -287,15 +286,15 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                         <div class="divTableCell"><b>4.
                                                 จำนวนแนวเขตพื้นที่อนุรักษ์และที่ดินที่ได้มีการจัดทำแนวเขต</b>
                                         </div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a23"
+                                                                         value="<?php echo $result["a23"]; ?>"/></div>
                                         <div class="divTableCell"><b>ตาราง กม.</b></div>
 
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
-                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
-                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="a24"
+                                                                         value="<?php echo $result["a24"]; ?>"/></div>
                                         <div class="divTableCell"><b>ไร่</b></div>
                                     </div>
 
@@ -303,7 +302,7 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <div class="divTableRow">
                                         <div class="divTableCell"></div>
                                         <div class="divTableCell">
-                                            <button type="submit" name="btnsave3" class="btn btn-default">
+                                            <button type="submit" name="btnsave1" class="btn btn-default">
                                                 <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
                                             </button>
                                         </div>

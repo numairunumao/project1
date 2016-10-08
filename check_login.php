@@ -1,3 +1,8 @@
+<head>
+    <meta charset="utf-8">
+</head>
+
+
 <?php
 //include("dbconfig.php");
 //session_start();
@@ -50,7 +55,7 @@ if ($objResult)
         $_SESSION["name"] = $objResult["name"];
         $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้บริหาร)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
-        header("refresh:1;policyreportbackend.php");
+        header("refresh:1;policyreport.php");
 
     }
 
@@ -59,6 +64,7 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
+        $_SESSION["name"] = $objResult["name"];
         $message = "ยินดีต้อนรับเข้าสู่ระบบ (กรรมการ)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
         header("refresh:1;boardstaff.php");   // BOARD
@@ -69,6 +75,7 @@ if ($objResult)
     {
         $_SESSION["id"] = $objResult["id"];
         $_SESSION["role"] = $objResult["role"];
+        $_SESSION["name"] = $objResult["name"];
         $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้ปฏิบัติงาน)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
         header("refresh:1;boardstaff.php");

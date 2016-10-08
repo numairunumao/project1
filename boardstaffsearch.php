@@ -23,8 +23,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
