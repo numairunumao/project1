@@ -31,7 +31,14 @@ if (!$_SESSION) {
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <link href="css/page.css" rel="stylesheet">
-    <![endif]-->
+    <link href="css/table.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', serif;
+            font-size: 14px;
+        }
+    </style>
 
 </head>
 
@@ -101,112 +108,390 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
                 <div class="tab-content">
                     <div id="menu1" class="tab-pane fade in active">
-                        <h3>ยุทธศาสตร์ที่ 1</h3>
+                        <h3>ยุทธศาสตร์ที่ 1 ด้านการรักษาความสมดุลของธรรมชาติ
+                            การอนุรักษ์ที่ดินและทรัพยากรที่ดินอย่างยั่งยืน</h3><br>
 
                         <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
                               class="form-horizontal">
 
-                            <table class="table table-bordered table-responsive">
+                            <div class="divTable">
+                                <div class="divTableBody">
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>1.1 พื้นที่ป่าไม้</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
 
-                                <tr>
-                                    <td><label class="control-label">พื้นที่ป่าไม้</label></td>
-                                    <td><input class="form-control" type="text" name="s11"
-                                               value="<?php echo $result["s11"]; ?>"/></td>
+                                    </div>
 
-                                    <td><label class="control-label">พื้นที่ประเทศไทยทั้งหมด</label></td>
-                                    <td><input class="form-control" type="text" name="s11new"
-                                               value="<?php echo $result["s11new"]; ?>"/></td>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>1.2 พื้นที่ประเทศไทยทั้งหมด</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
 
-                                </tr>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.1 อุทยานแห่งชาติ</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.2 เขตรักษาพันธ์ุสัตว์ป่า</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.3 วนอุทยาน</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.4 เขตห้ามล่าสัตว์ป่า</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.5 เขตป่าสงวนแห่งชาติ
+                                                ที่กำหนดเป็นเขตป่าเพื่อการอนุรักษ์</b>
+                                        </div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.1 พื้นที่ป่าเสื่อมโทรมี่ได้รับการสำรวจ</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>แห่ง</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b><b>เนื้อที่ ตาราง กม.</b></b>
+                                        </div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.2 พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟู</b>
+                                        </div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>จำนวนโครงการ/จำนวนแปลง</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>เนื้อที่ ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดที่ประกาศเพิ่มในแต่ละปี</b></div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>4.
+                                                จำนวนแนวเขตพื้นที่อนุรักษ์และที่ดินที่ได้มีการจัดทำแนวเขต</b>
+                                        </div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ตาราง กม.</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31"
+                                                                         value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
 
 
-                                <tr>
-                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศใหม่</label></td>
-                                    <td><input class="form-control" type="text" name="s12"
-                                               value="<?php echo $result["s12"]; ?>"/></td>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell">
+                                            <button type="submit" name="btnsave3" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
+                                            </button>
+                                        </div>
+                                    </div>
 
-                                    <td><label class="control-label">พื้นที่ที่ได้รับการประกาศเดิม</label></td>
-                                    <td><input class="form-control" type="text" name="s12new"
-                                               value="<?php echo $result["s12new"]; ?>"/></td>
-                                </tr>
 
-
-                                <tr>
-                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูปัจจุบัน
-                                            (ไร่) </label></td>
-                                    <td><input class="form-control" type="text" name="s13"
-                                               value="<?php echo $result["s13"]; ?>"/></td>
-
-                                    <td><label class="control-label">พื้นที่ป่าเสื่อมโทรมที่ได้รับการฟื้นฟูเดิม</label>
-                                    </td>
-                                    <td><input class="form-control" type="text" name="s13new"
-                                               value="<?php echo $result["s13new"]; ?>"/></td>
-
-                                </tr>
-
-                                <tr>
-                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ปัจจุบัน</label></td>
-                                    <td><input class="form-control" type="text" name="s14"
-                                               value="<?php echo $result["s14"]; ?>"/></td>
-                                    <td><label class="control-label">แนวเขตพื้นที่อนุรักษ์ เดิม</label></td>
-                                    <td><input class="form-control" type="text" name="s14new"
-                                               value="<?php echo $result["s14new"]; ?>"/></td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" colspan="2">
-                                        <button type="submit" name="btnsave1" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
-                                        </button>
-                                    </td>
-                                </tr>
-
-                            </table>
+                                </div>
+                            </div>
+                            <!-- DivTable.com -->
                         </form>
                     </div>
 
-                    <!--                    ____________________________________________________________________________________________-->
+                    <!--                    ______________________ ______________________ ______________________ ______________________ ______________________-->
 
 
                     <div id="menu2" class="tab-pane fade">
-                        <h3>ยุทธศาสตร์ที่ 2</h3>
+                        <h3>ยุทธศาสตร์ที่ 2 ด้านการใช้ที่ดิน และ ทรัพยากรที่ดินเพื่อให้เกิดประโยชน์สูงสุด</h3><br>
                         <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
                               class="form-horizontal">
 
-                            <table class="table table-bordered table-responsive">
+                            <div class="divTable">
+                                <div class="divTableBody">
 
-                                <tr>
-                                    <td><label class="control-label">จำนวนที่ดินที่ใช้อย่างเหมาะสม</label></td>
-                                    <td><input class="form-control" type="text" name="s21"
-                                               value="<?php echo $result2["s21"]; ?>"/></td>
-                                </tr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">1.1 เนื้อที่ของที่ดินที่มีการใช้ที่ดินที่เหมาะกับศักยภาพและสมรรถนะของทรัพยากรดิน</div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2559)</b></div>
+                                    </div>
 
-                                <tr>
-                                    <td><label class="control-label">จำนวนที่ดินที่นำมาใช้ประโยชน์</label></td>
-                                    <td><input class="form-control" type="text" name="s22"
-                                               value="<?php echo $result2["s22"]; ?>"/></td>
-                                </tr>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2560)</b></div>
 
-                                <tr>
-                                    <td><label class="control-label">จำนวนที่ดินที่ได้รับการฟื้นฟู</label></td>
-                                    <td><input class="form-control" type="text" name="s23"
-                                               value="<?php echo $result2["s23"]; ?>"/></td>
-                                </tr>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2561)</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2562)</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2563)</b></div>
+                                    </div>
 
-                                <tr>
-                                    <td align="center" colspan="2">
-                                        <button type="submit" name="btnsave2" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
-                                        </button>
-                                    </td>
-                                </tr>
+                                    <hr>
 
-                            </table>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">1.2 เนื้อที่ของที่ดินที่มีการใช้ที่ดินไม่เหมาะสมกับศักยภาพ และ สมรถถนะของทรัพยากรดิน</div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2559)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2560)</b></div>
+
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2561)</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2562)</b></div>
+                                    </div>
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2563)</b></div>
+                                    </div>
+
+                                    <hr>
+
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">2.1 ที่ดินที่ถูกทิ้งร้าง หรือไม่มีการ ใช้ประโยชน์ของประเทศ</div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ยอดการสำรวจล่าสุด ที่เสนอให้ คทช. เห็นชอบ ใช้เป็นข้อมูลปีฐาน (ไร่)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>2.2 ที่ดินที่ถูกทิ้งร้าง หรือไม่มีการ ใช้ประโยชน์ต่างๆ</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2559)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2560)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2561)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2562)</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b></b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่ (รวมปี พ.ศ. 2563)</b></div>
+                                    </div>
+
+                                    <hr>
+
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">3.1 เนื้อที่ของที่ดินที่มีปัญหา ดินเค็ม</div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.2 เนื้อที่ของที่ดินที่มีปัญหา ดินทรายจัด</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.3 เนื้อที่ของที่ดินที่มีปัญหา ดินตื้น ดินที่มีชั้นลูกรัง</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.4 เนื้อที่ของที่ดินที่มีปัญหา ดินเปรี้ยวจัด</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.5 เนื้อที่ของที่ดินที่มีปัญหา ดินอินทรีย์</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.6 เนื้อที่ของที่ดินที่มีปัญหา ดินดาน</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.7 เนื้อที่ของที่ดินที่มีปัญหา ดินที่มีการปนเปื้อน</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"><b>3.8 เนื้อดินของที่ดินที่มีปัญหาอื่นๆ</b></div>
+                                        <div class="divTableCell"><input class="form-control" type="text" name="s31" value="<?php echo $result3["s31"]; ?>"/></div>
+                                        <div class="divTableCell"><b>ไร่</b></div>
+                                    </div>
+
+
+
+
+
+                                    <div class="divTableRow">
+                                        <div class="divTableCell"></div>
+                                        <div class="divTableCell">
+                                            <button type="submit" name="btnsave3" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-save"></span> &nbsp; บันทึกข้อมูล
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </form>
                     </div>
-
-
-                    <!--                    ______________________ ______________________ ______________________ ______________________ ______________________-->
 
 
                     <div id="menu3" class="tab-pane fade">
