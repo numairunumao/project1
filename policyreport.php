@@ -305,8 +305,8 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td align="center" rowspan="6">เนื้อที่ของที่ดินที่มีการใช้ที่ดิน ที่เหมาะสมกับศักยภาพและสมรรถนะของทรัพยากรดิน</td>
                             <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
                             <td align="center">ไร่ (รวมปี พ.ศ. 2559)</td>
-                            <td align="center" rowspan="6">• กระทรวงมหาดไทย
-                                • กระทรวงเกษตรและสหกรณ์
+                            <td align="center" rowspan="6">• กระทรวงมหาดไทย<br>
+                                • กระทรวงเกษตรและสหกรณ์<br>
                                 • กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
                             <td align="center">2559</td>
                         </tr>
@@ -339,8 +339,8 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td align="center" rowspan="6">เนื้อที่ของที่ดินที่มีการใช้ที่ดิน  ไม่เหมาะสมกับศักยภาพและสมรรถนะของทรัพยากรดิน</td>
                             <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
                             <td align="center">ไร่ (รวมปี พ.ศ. 2559)</td>
-                            <td align="center" rowspan="6">• กระทรวงมหาดไทย
-                                • กระทรวงเกษตรและสหกรณ์
+                            <td align="center" rowspan="6">• กระทรวงมหาดไทย<br>
+                                • กระทรวงเกษตรและสหกรณ์<br>
                                   • กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</td>
                             <td align="center">2559</td>
                         </tr>
@@ -375,7 +375,7 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td align="center" >ที่ดินที่ถูกทิ้งร้าง หรือไม่มีการใช้ประโยชน์ของประเทศ</td>
                             <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
                             <td align="center">ยอดการสำรวจล่าสุด ที่เสนอให้ คทช. เห็นชอบใช้เป็นข้อมูลปีฐาน</td>
-                            <td align="center" rowspan="7">• ส่วนราชการที่รับผิดชอบในกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม
+                            <td align="center" rowspan="7">• ส่วนราชการที่รับผิดชอบในกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม<br>
                                 • กระทรวงมหาดไทย</td>
                             <td align="center">2559 - 2563</td>
                         </tr>
@@ -412,15 +412,15 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                         </tr>
 
                         <tr>
-                            <td align="center" rowspan="8">3. ที่ดินที่มีปัญหาและขาดความอุดมสมบูรณ์ ได้รับการพัฒนาและฟื้นฟูคุณภาพของทรัพยากรดินเพื่อนํามาใช้ประโยชน์</td>
+                            <td align="center" rowspan="32">3. ที่ดินที่มีปัญหาและขาดความอุดมสมบูรณ์ ได้รับการพัฒนาและฟื้นฟูคุณภาพของทรัพยากรดินเพื่อนํามาใช้ประโยชน์</td>
                             <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินเค็ม</td>
                             <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
                             <td align="center">ไร่</td>
-                            <td align="center" rowspan="8">• กระทรวงเกษตรและสหกรณ์
-                                - กรมพัฒนาที่ดิน
-                                - กรมวิชาการเกษตร
-                                - กรมส่งเสริมการเกษตร
-                                - กรมประมง
+                            <td align="center" rowspan="32">- กระทรวงเกษตรและสหกรณ์ <br>
+                                - กรมพัฒนาที่ดิน<br>
+                                - กรมวิชาการเกษตร<br>
+                                - กรมส่งเสริมการเกษตร<br>
+                                - กรมประมง<br>
                                 - กรมปศุสัตว์</td>
                             <td align="center">2559 - 2563</td>
                         </tr>
@@ -467,6 +467,143 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                             <td align="center">2559 - 2563</td>
                         </tr>
 
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินเค็ม ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินทรายจัด ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินตื้นดินที่มีชั้นลูกรัง ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินเปรี้ยวจัด ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินอินทรีย์ ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินดาน ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาดินที่มีการปนเปื้อน ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">เนื้อที่ของที่ดินที่มีปัญหาอื่นๆ ได้รับการแก้ไขแล้ว</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ไร่</td>
+                            <td align="center">2559 - 2563</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินเค็ม</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินเค็ม</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินทรายจัด</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินทรายจัด</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินตื้น ดินที่มีชั้นลูกรัง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินตื้น ดินที่มีชั้นลูกรัง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินเปรี้ยวจัด</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินเปรี้ยวจัด</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินอินทรีย์</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินอินทรีย์</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินดาน</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินดาน</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาดินที่มีการปนเปื้อน</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาดินที่มีการปนเปื้อน</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+                        <tr>
+                            <td align="center">จำนวนแผนงานโครงการ ที่ดำเนินการแก้ไขปัญหาอื่น ๆ</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">แผนงาน</td>
+                            <td align="center" rowspan="2">2559</td>
+                        </tr>
+                        <tr>
+                            <td align="center">งบประมาณ ที่ดำเนินการแก้ไขปัญหาอื่น ๆ</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">บาท</td>
+                        </tr>
+
                     </table>
 
 
@@ -479,6 +616,91 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                 รวมทั้งป้องกันมิให้มีการถ่ายโอนทรัพย์สินของรัฐไปยังกลุ่มผลประโยชน์
                             </td>
                         </tr>
+                        <tr class="bg-primary">
+                            <td align="center" width="25%">ตัวชี้วัด</td>
+                            <td align="center" colspan="3">ตัวชี้วัดในการติดตามประเมินผล</td>
+                            <td align="center" width="25%">แหล่งข้อมูล</td>
+                            <td align="center" width="8%">ข้อมูลปีฐาน</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" >1. จำนวนผู้ยากไร้ที่ไม่มีที่ดินทำกินลดลง</td>
+                            <td align="center" >จำนวนผู้ได้รับการจัดที่ดินทำกินจากรัฐ</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">ราย</td>
+                            <td align="center">ฝ่ายเลขานุการ คทช.คณะอนุกรรมการจัดที่ดิน
+                                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
+                            <td align="center" rowspan="15">2559 - 2560</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" rowspan="6">2. มีการเข้าถึงการครอบครอง ที่ดินอย่างทั่วถึงเป็นธรรมมากขึ้น</td>
+                            <td align="center" rowspan="3">ที่ดินทำกินที่รัฐได้จัดให้แก่ราษฎร</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+                            <td align="center" rowspan="6">ฝ่ายเลขานุการ คทช.
+                                คณะอนุกรรมการจัดที่ดิน
+                                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนแปลง (แปลง)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">เนื้อที่ (ไร่)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" rowspan="3">ที่ดินเพื่อที่อยู่อาศัยที่รัฐได้จัดให้ แก่ราษฎร</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนแปลง (แปลง)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">เนื้อที่ (ไร่)</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" rowspan="8">3. การบุกรุกที่ดินของรัฐลดลง</td>
+                            <td align="center" rowspan="4">ที่ดินของรัฐที่เคยถูกบุกรุก ที่ได้คืนจากการย้ายราษฎรเข้าสู่พื้นที่จัดที่ดิน</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+                            <td align="center" rowspan="8">ฝ่ายเลขานุการ คทช.
+                                คณะอนุกรรมการจัดที่ดิน
+                                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนแปลง (แปลง)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">เนื้อที่ (ไร่)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนครัวเรือน (ครัวเรือน)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" rowspan="4">ที่ดินของรัฐที่เคยถูกบุกรุกและนำมาจัดที่ดินให้แก่ราษฎรเข้าใช้ประโยชน์</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนแปลง (แปลง)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">เนื้อที่ (ไร่)</td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">จำนวนครัวเรือน (ครัวเรือน)</td>
                         </tr>
                     </table>
 
@@ -494,6 +716,67 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                 รวมทั้งเพิ่มประสิทธิภาพการบริหารจัดการที่ดินและทรัพยากรดิน
                                 ลดปัญหาความซ้ำซ้อนและความล่าช้า
                             </td>
+                        </tr>
+                        <tr class="bg-primary">
+                            <td align="center" width="25%">ตัวชี้วัด</td>
+                            <td align="center" colspan="3">ตัวชี้วัดในการติดตามประเมินผล</td>
+                            <td align="center" width="25%">แหล่งข้อมูล</td>
+                            <td align="center" width="8%">ข้อมูลปีฐาน</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" >1. มีระบบฐานข้อมูลที่สนับสนุน การบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ</td>
+                            <td align="center" >มีการพัฒนาฐานข้อมูล ระบบข้อมูลที่เกี่ยวข้องเพิ่มขึ้นในแต่ละปีหรือไม่</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center" width="6%">ฐานข้อมูล</td>
+                            <td align="center" rowspan="9">• การสำรวจหรือการรายงานจากหน่วยงานที่มีภารกิจเกี่ยวกับการบริหารจัดการที่ดิน <br>
+
+                                • การสำรวจหรือการรายงานจากหน่วยงานที่มีภารกิจเกี่ยวกับการบริหารจัดการที่ดิน <br>
+
+                                • คณะอนุกรรมการบูรณาการกฎหมายการบริหารจัดการที่ดิน (หากยังมีภารกิจต่อเนื่อง)</td>
+                            <td align="center" rowspan="9">2559 - 2563</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" rowspan="8">2. กฎหมายได้รับการพัฒนาและแก้ไขปรับปรุงให้สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ</td>
+                            <td align="center">ชื่อกฎหมายที่อยู่ขั้นตอนการ ยกร่าง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">กฎหมาย</td>
+                        </tr>
+                        <tr>
+                            <td align="center">หน่วยงานที่ทำการยกร่าง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">หน่วยงาน</td>
+                        </tr>
+                        <tr>
+                            <td align="center">สาระสำคัญ ของกฎหมายที่อยู่ขั้นตอนการยกร่าง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">สาระสำคัญ</td>
+                        </tr>
+                        <tr>
+                            <td align="center">ส่วนที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดิน ในกฎหมายที่อยู่ขั้นตอนการ ยกร่าง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">ส่วน</td>
+                        </tr>
+                        <tr>
+                            <td align="center">ชื่อกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php echo $result["s11"]; ?></td>
+                            <td align="center">กฏหมาย</td>
+                        </tr>
+                        <tr>
+                            <td align="center">หน่วยงานที่ทำการปรับปรุง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">หน่วยงาน</td>
+                        </tr>
+                        <tr>
+                            <td align="center">สาระสำคัญ ของกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">สาระสำคัญ</td>
+                        </tr>
+                        <tr>
+                            <td align="center">ส่วนที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดิน ในกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+                            <td align="center" bgcolor="#D5D5D5"><?php ?></td>
+                            <td align="center">ส่วน</td>
                         </tr>
                     </table>
                 </div>
