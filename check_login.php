@@ -55,7 +55,7 @@ if ($objResult)
         $_SESSION["name"] = $objResult["name"];
         $message = "ยินดีต้อนรับเข้าสู่ระบบ (ผู้บริหาร)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
-        header("refresh:1;policyreport.php");
+        header("refresh:1;policyreport1.php");
 
     }
 

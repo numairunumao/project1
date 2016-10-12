@@ -42,81 +42,78 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
     <h5 align="right">ระบบติดตามประเมินผลนโยบายและแผน</h5>
     <br>
 
-    <table width="100%" align="center" border="1">
-
+    <table border="1" width="100%" align="center">
         <tr>
-            <td align="center" colspan="5" class="bg-success">
-                <h4> ยุทธศาสตร์ที่ 4 : ด้านการบริหารจัดการที่ดินและทรัพยากรดิน​</h4><br>
+            <td align="center" colspan="7" class="bg-success">
+                <h4>ยุทธศาสตร์ที่ 4 : ด้านการบริหารจัดการที่ดินและทรัพยากรดิน​
+                </h4>
                 เพื่อความมีเอกภาพในการบริหารจัดการที่ดินและทรัพยากรดิน
                 ที่อาศัยความร่วมมือจากทุกฝ่ายที่เกี่ยวข้อง
                 รวมทั้งเพิ่มประสิทธิภาพการบริหารจัดการที่ดินและทรัพยากรดิน
                 ลดปัญหาความซ้ำซ้อนและความล่าช้า
             </td>
         </tr>
-
         <tr class="bg-primary">
-            <td align="center">ตัวชี้วัด</td>
-            <td align="center" colspan="3">สรุปผลการดำเนินงาน</td>
-            <td align="center">การประเมินผล</td>
-        </tr>
-        <tr>
-            <td align="center">1.
-                มีองค์กรในการขับเคลื่อนและบูรณาการนโยบายด้านการบริหารจัดการที่ดินและทรัพยากรดิน
-            </td>
-            <td align="center">จำนวน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["s41"]; ?></td>
-            <td align="center">องค์กร</td>
-            <td align="center" bgcolor="#D5D5D5"><?php
-                if ($result4["s41"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
+            <td align="center" width="25%">ตัวชี้วัด</td>
+            <td align="center" colspan="3">ตัวชี้วัดในการติดตามประเมินผล</td>
+            <td align="center" width="25%">แหล่งข้อมูล</td>
+            <td align="center" width="8%">ข้อมูลปีฐาน</td>
         </tr>
 
         <tr>
-            <td align="center">2.
-                มีระบบฐานข้อมูลที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ
-            </td>
-            <td align="center">จำนวน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["s42"]; ?></td>
-            <td align="center">ฐานข้อมูล</td>
-            <td align="center" bgcolor="#D5D5D5"><?php
-                if ($result4["s42"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
+            <td align="center" >1. มีระบบฐานข้อมูลที่สนับสนุน การบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ</td>
+            <td align="center" >มีการพัฒนาฐานข้อมูล ระบบข้อมูลที่เกี่ยวข้องเพิ่มขึ้นในแต่ละปีหรือไม่</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d1"]; ?></td>
+            <td align="center" width="6%">ฐานข้อมูล</td>
+            <td align="center" rowspan="9">• การสำรวจหรือการรายงานจากหน่วยงานที่มีภารกิจเกี่ยวกับการบริหารจัดการที่ดิน <br>
+
+                • การสำรวจหรือการรายงานจากหน่วยงานที่มีภารกิจเกี่ยวกับการบริหารจัดการที่ดิน <br>
+
+                • คณะอนุกรรมการบูรณาการกฎหมายการบริหารจัดการที่ดิน (หากยังมีภารกิจต่อเนื่อง)</td>
+            <td align="center" rowspan="9">2559 - 2563</td>
         </tr>
 
         <tr>
-            <td align="center">3.
-                กฎหมายได้รับการพัฒนาและแก้ไขปรับปรุงให้สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ
-            </td>
-            <td align="center">จำนวน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["s43"]; ?></td>
-            <td align="center">มาตรา</td>
-            <td align="center" bgcolor="#D5D5D5"><?php
-                if ($result4["s43"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
+            <td align="center" rowspan="8">2. กฎหมายได้รับการพัฒนาและแก้ไขปรับปรุงให้สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดินอย่างมีประสิทธิภาพ</td>
+            <td align="center">ชื่อกฎหมายที่อยู่ขั้นตอนการ ยกร่าง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d2"]; ?></td>
+            <td align="center">กฎหมาย</td>
         </tr>
-
         <tr>
-            <td align="center">4. มีการพัฒนาองค์ความรู้ด้านการบริหารจัดการที่ดินและทรัพยากรดิน</td>
-            <td align="center">จำนวน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["s44"]; ?></td>
-            <td align="center">องค์ความรู้</td>
-            <td align="center" bgcolor="#D5D5D5"><?php
-                if ($result4["s44"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
+            <td align="center">หน่วยงานที่ทำการยกร่าง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d3"]; ?></td>
+            <td align="center">หน่วยงาน</td>
         </tr>
-
+        <tr>
+            <td align="center">สาระสำคัญ ของกฎหมายที่อยู่ขั้นตอนการยกร่าง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d4"]; ?></td>
+            <td align="center">สาระสำคัญ</td>
+        </tr>
+        <tr>
+            <td align="center">ส่วนที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดิน ในกฎหมายที่อยู่ขั้นตอนการ ยกร่าง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d5"]; ?></td>
+            <td align="center">ส่วน</td>
+        </tr>
+        <tr>
+            <td align="center">ชื่อกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d6"]; ?></td>
+            <td align="center">กฏหมาย</td>
+        </tr>
+        <tr>
+            <td align="center">หน่วยงานที่ทำการปรับปรุง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d7"];?></td>
+            <td align="center">หน่วยงาน</td>
+        </tr>
+        <tr>
+            <td align="center">สาระสำคัญ ของกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d8"];?></td>
+            <td align="center">สาระสำคัญ</td>
+        </tr>
+        <tr>
+            <td align="center">ส่วนที่สนับสนุนการบริหารจัดการที่ดินและทรัพยากรดิน ในกฎหมายที่อยู่ขั้นตอนการปรับปรุง</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result4["d9"];?></td>
+            <td align="center">ส่วน</td>
+        </tr>
     </table>
 
     <br>
@@ -131,16 +128,5 @@ $result4 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 </html>
 
 <?php
-
-$HTMLoutput = ob_get_contents();
-ob_end_clean();
-
-$mpdf = new mPDF('th', 'A4-L', '11', '', '15', '15', '15', '15');
-
-$mpdf->WriteHTML($HTMLoutput, 2);
-$mpdf->Output();
-
-$mpdf->Output("user_pdf/report.pdf");
-
-?>
-
+include_once 'pdfproperties.php';
+;?>

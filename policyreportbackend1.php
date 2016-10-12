@@ -60,18 +60,16 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
 
     <div class="row centered-form">
         <div class="panel panel-primary">
-
-
             <div class="panel-heading">
                 <h3>ยุทธศาสตร์ที่ 1 ด้านการรักษาความสมดุลของธรรมชาติ
                     การอนุรักษ์ที่ดินและทรัพยากรที่ดินอย่างยั่งยืน</h3>
             </div>
             <br>
+
+
             <div class="container">
 
-
-
-                        <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
+                <form method="post" action="insertstrategy.php" enctype="multipart/form-data"
                               class="form-horizontal">
 
                             <div class="divTable">
@@ -182,7 +180,7 @@ $result = mysqli_fetch_array($query, MYSQLI_ASSOC)
                                     <hr>
                                     <div class="divTableRow">
                                         <div class="divTableCell">2.5 เขตป่าสงวนแห่งชาติ
-                                                ที่กำหนดเป็นเขตป่าเพื่อการอนุรักษ์
+                                                ที่กำหนดเป็นเขตป่าเพื่อการอนุรักษ์ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         </div>
                                         <div class="divTableCell"><input class="form-control" type="text" name="a15"
                                                                          value="<?php echo $result["a15"]; ?>"/></div>

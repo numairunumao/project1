@@ -91,7 +91,34 @@ else if (isset($_POST['btnsave2'])) {
 			b21 = '" . $_POST["b21"] . "' ,
 			b22 = '" . $_POST["b22"] . "' ,
 			b23 = '" . $_POST["b23"] . "' ,
-			b24 = '" . $_POST["b24"] . "' 
+			b24 = '" . $_POST["b24"] . "' ,
+			b25 = '" . $_POST["b25"] . "' ,
+			b26 = '" . $_POST["b26"] . "' ,
+			b27 = '" . $_POST["b27"] . "' ,
+			b28 = '" . $_POST["b28"] . "' ,
+			b29 = '" . $_POST["b29"] . "' ,
+			b30 = '" . $_POST["b30"] . "' ,
+			b31 = '" . $_POST["b31"] . "' ,
+			b32 = '" . $_POST["b32"] . "' ,
+			b33 = '" . $_POST["b33"] . "' ,
+			b34 = '" . $_POST["b34"] . "' ,
+			b35 = '" . $_POST["b35"] . "' ,
+			b36 = '" . $_POST["b36"] . "' ,
+			b37 = '" . $_POST["b37"] . "' ,
+			b38 = '" . $_POST["b38"] . "' ,
+			b39 = '" . $_POST["b39"] . "' ,
+			b40 = '" . $_POST["b40"] . "' ,
+			b41 = '" . $_POST["b41"] . "' ,
+			b42 = '" . $_POST["b42"] . "' ,
+			b43 = '" . $_POST["b43"] . "' ,
+			b44 = '" . $_POST["b44"] . "' ,
+			b45 = '" . $_POST["b45"] . "' ,
+			b46 = '" . $_POST["b46"] . "' ,
+			b47 = '" . $_POST["b47"] . "' ,
+			b48 = '" . $_POST["b48"] . "' 
+		
+			
+			
 			
 			
 			
@@ -124,12 +151,21 @@ else if (isset($_POST['btnsave3'])) {
     error_reporting(~0);
 
     $sql = "UPDATE strategy3 SET
-			s31 = '" . $_POST["s31"] . "' ,
-			s32 = '" . $_POST["s32"] . "' ,
-			s33 = '" . $_POST["s33"] . "' ,
-			s31new = '" . $_POST["s31new"] . "' ,
-			s32new = '" . $_POST["s32new"] . "' ,
-			s33new = '" . $_POST["s33new"] . "'
+			c1 = '" . $_POST["c1"] . "' ,
+			c2 = '" . $_POST["c2"] . "' ,
+			c3 = '" . $_POST["c3"] . "' ,
+			c4 = '" . $_POST["c4"] . "' ,
+			c5 = '" . $_POST["c5"] . "' ,
+			c6 = '" . $_POST["c6"] . "' ,
+			c7 = '" . $_POST["c7"] . "' ,
+			c8 = '" . $_POST["c8"] . "' ,
+			c9 = '" . $_POST["c9"] . "' ,
+			c10 = '" . $_POST["c10"] . "' ,
+			c11 = '" . $_POST["c11"] . "' ,
+			c12 = '" . $_POST["c12"] . "' ,
+			c13 = '" . $_POST["c13"] . "' ,
+			c14 = '" . $_POST["c14"] . "' ,
+			c15 = '" . $_POST["c15"] . "' 
 
 			WHERE id = '1' ";
 
@@ -140,7 +176,7 @@ else if (isset($_POST['btnsave3'])) {
         ?>
 
         <script> window.alert("บันทึกข้อมูลเรียบร้อยแล้ว"); </script>
-        <script>window.location = "policyreportbackend.php";</script>
+        <script>window.location = "policyreportbackend3.php";</script>
 
         <?php
 
@@ -159,10 +195,17 @@ else if (isset($_POST['btnsave4'])) {
     error_reporting(~0);
 
     $sql = "UPDATE strategy4 SET
-			s41 = '" . $_POST["s41"] . "' ,
-			s42 = '" . $_POST["s42"] . "' ,
-			s43 = '" . $_POST["s43"] . "' ,
-			s44 = '" . $_POST["s44"] . "'
+			d1 = '" . $_POST["d1"] . "' ,
+			d2 = '" . $_POST["d2"] . "' ,
+			d3 = '" . $_POST["d3"] . "' ,
+			d4 = '" . $_POST["d4"] . "' ,
+			d5 = '" . $_POST["d5"] . "' ,
+			d6 = '" . $_POST["d6"] . "' ,
+			d7 = '" . $_POST["d7"] . "' ,
+			d8 = '" . $_POST["d8"] . "' ,
+			d9 = '" . $_POST["d9"] . "' 
+			
+			
 
 			WHERE id = '1' ";
 
@@ -173,7 +216,7 @@ else if (isset($_POST['btnsave4'])) {
         ?>
 
         <script> window.alert("บันทึกข้อมูลเรียบร้อยแล้ว"); </script>
-        <script>window.location = "policyreportbackend.php";</script>
+        <script>window.location = "policyreportbackend4.php";</script>
 
         <?php
 

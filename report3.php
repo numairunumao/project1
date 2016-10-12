@@ -42,105 +42,100 @@ $result3 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 <br>
 
     <table border="1" width="100%" align="center">
-
         <tr>
             <td align="center" colspan="7" class="bg-success">
-                <h4>ยุทธศาสตร์ที่ 3 : ด้านการจัดที่ดินให้ประชาชนผู้ด้อยโอกาสอย่างทั่วถึงและเป็นธรรม</h4><br>
-                ผู้ด้อยโอกาสมีที่ดินทำกิน ที่อยู่อาศัย และบริการขั้นพื้นฐานให้พึ่งตนเองได้
+                <h4>ยุทธศาสตร์ที่ 3 : ด้านการจัดที่ดินให้ประชาชนผู้ด้อยโอกาสอย่างทั่วถึงและเป็นธรรม
+                </h4>ผู้ด้อยโอกาสมีที่ดินทำกิน ที่อยู่อาศัย และบริการขั้นพื้นฐานให้พึ่งตนเองได้
                 โดยเป็นไปตามหลักปรัชญาเศรษฐกิจพอเพียง
                 รวมทั้งป้องกันมิให้มีการถ่ายโอนทรัพย์สินของรัฐไปยังกลุ่มผลประโยชน์
             </td>
         </tr>
-
         <tr class="bg-primary">
-            <td align="center">ตัวชี้วัด</td>
-            <td align="center" colspan="3">สรุปผลการดำเนินงาน</td>
-            <td align="center" colspan="2">หมายเหตุ</td>
-            <td align="center">การประเมินผล</td>
-        </tr>
-        <tr>
-            <td align="center" rowspan="2">1. จำนวนผู้ยากไร้ที่ไม่มีที่ดินทำกินลดลง</td>
-            <td align="center">จำนวนผู่ไม่มีที่ดินทำกิน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["s31"]; ?></td>
-            <td align="center">คน</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php echo $result3["s31new"]; ?></td>
-            <td align="center" rowspan="2">จำนวนผู้ไม่มีที่ดินทำกินสำรวจในปีก่อนหน้า</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php
-                if ($result3["s31"] - $result3["s31new"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
-        </tr>
-        <tr>
-            <td align="center"><?php
-                if (($result3["s31"] - $result3["s31new"]) > 0) {
-                    echo "เพิ่มขึ้น";
-                } elseif (($result3["s31"] - $result3["s31new"]) == 0) {
-                    echo "เท่าเดิม";
-                } else {
-                    echo "ลดลง";
-                } ?></td> <!--ลดลง-->
-            <td align="center" bgcolor="#D5D5D5"><?php echo($result3["s31"] - $result3["s31new"]); ?></td>
-            <td align="center">คน</td>
+            <td align="center" width="25%">ตัวชี้วัด</td>
+            <td align="center" colspan="3">ตัวชี้วัดในการติดตามประเมินผล</td>
+            <td align="center" width="25%">แหล่งข้อมูล</td>
+            <td align="center" width="8%">ข้อมูลปีฐาน</td>
         </tr>
 
-
         <tr>
-            <td align="center" rowspan="2">2. มีการเข้าถึงการครอบครองที่ดินอย่างทั่วถึงเป็นธรรมมากขึ้น</td>
-            <td align="center">จำนวนผู้ที่อยู่ระหว่างขอจัดสรรที่ดิน</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["s32"]; ?></td>
-            <td align="center">คน</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php echo $result3["s32new"]; ?></td>
-            <td align="center" rowspan="2">จำนวนผู้ที่อยู่ระหว่างขอจัดสรรที่ดิน สำรวจในปีก่อนหน้า</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php
-                if ($result3["s32"] - $result3["s32new"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
-        </tr>
-        <tr>
-            <td align="center"><?php
-                if (($result3["s32"] - $result3["s32new"]) > 0) {
-                    echo "มีการขอจัดสรรที่ดินเพิ่มขึ้น";
-                } elseif (($result3["s32"] - $result3["s32new"]) == 0) {
-                    echo "เท่าเดิม";
-                } else {
-                    echo "ได้รับการจัดสรรแล้ว";
-                } ?></td> <!--มีการขอจัดสรรที่ดินเพิ่มขึ้น-->
-            <td align="center" bgcolor="#D5D5D5"><?php echo($result3["s32"] - $result3["s32new"]); ?></td>
-            <td align="center">คน</td>
+            <td align="center" >1. จำนวนผู้ยากไร้ที่ไม่มีที่ดินทำกินลดลง</td>
+            <td align="center" >จำนวนผู้ได้รับการจัดที่ดินทำกินจากรัฐ</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c1"]; ?></td>
+            <td align="center">ราย</td>
+            <td align="center">ฝ่ายเลขานุการ คทช.คณะอนุกรรมการจัดที่ดิน
+                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
+            <td align="center" rowspan="15">2559 - 2560</td>
         </tr>
 
-
         <tr>
-            <td align="center" rowspan="2">3. การบุกรุกที่ดินของรัฐลดลง</td>
-            <td align="center"> ที่ดินรัฐที่ถูกบุกรุก</td>
-            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["s33"]; ?></td>
-            <td align="center">ไร่</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php echo $result3["s33new"]; ?></td>
-            <td align="center" rowspan="2">ที่ดินรัฐที่ถูกบุกรุก สำรวจในปีก่อนหน้า</td>
-            <td align="center" rowspan="2" bgcolor="#D5D5D5"><?php
-                if ($result3["s33"] - $result3["s33new"] > 0) {
-                    echo "ผ่าน";
-                } else {
-                    echo "ไม่ผ่าน";
-                } ?></td>
+            <td align="center" rowspan="6">2. มีการเข้าถึงการครอบครอง ที่ดินอย่างทั่วถึงเป็นธรรมมากขึ้น</td>
+            <td align="center" rowspan="3">ที่ดินทำกินที่รัฐได้จัดให้แก่ราษฎร</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c2"]; ?></td>
+            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+            <td align="center" rowspan="6">ฝ่ายเลขานุการ คทช.
+                คณะอนุกรรมการจัดที่ดิน
+                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
         </tr>
         <tr>
-            <td align="center"><?php
-                if (($result3["s33"] - $result3["s33new"]) > 0) {
-                    echo "ถูกบุกรุกเพิ่มขึ้น";
-                } elseif (($result3["s33"] - $result3["s33new"]) == 0) {
-                    echo "เท่าเดิม";
-                } else {
-                    echo "ถูกบุกรุกลดลง";
-                } ?></td> <!--ถูกบุกรุกลดลง-->
-            <td align="center" bgcolor="#D5D5D5"><?php echo($result3["s33"] - $result3["s33new"]); ?></td>
-            <td align="center">ไร</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c3"]; ?></td>
+            <td align="center">จำนวนแปลง (แปลง)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c4"]; ?></td>
+            <td align="center">เนื้อที่ (ไร่)</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="3">ที่ดินเพื่อที่อยู่อาศัยที่รัฐได้จัดให้ แก่ราษฎร</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c5"]; ?></td>
+            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c6"]; ?></td>
+            <td align="center">จำนวนแปลง (แปลง)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c7"]; ?></td>
+            <td align="center">เนื้อที่ (ไร่)</td>
         </tr>
 
+        <tr>
+            <td align="center" rowspan="8">3. การบุกรุกที่ดินของรัฐลดลง</td>
+            <td align="center" rowspan="4">ที่ดินของรัฐที่เคยถูกบุกรุก ที่ได้คืนจากการย้ายราษฎรเข้าสู่พื้นที่จัดที่ดิน</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c8"]; ?></td>
+            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+            <td align="center" rowspan="8">ฝ่ายเลขานุการ คทช.
+                คณะอนุกรรมการจัดที่ดิน
+                หน่วยงานที่รับผิดชอบจัดที่ดินตามนโยบาย</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c9"]; ?></td>
+            <td align="center">จำนวนแปลง (แปลง)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c10"]; ?></td>
+            <td align="center">เนื้อที่ (ไร่)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c11"]; ?></td>
+            <td align="center">จำนวนครัวเรือน (ครัวเรือน)</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="4">ที่ดินของรัฐที่เคยถูกบุกรุกและนำมาจัดที่ดินให้แก่ราษฎรเข้าใช้ประโยชน์</td>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c12"]; ?></td>
+            <td align="center">จำนวนโครงการ (พื้นที่)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c13"]; ?></td>
+            <td align="center">จำนวนแปลง (แปลง)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c14"]; ?></td>
+            <td align="center">เนื้อที่ (ไร่)</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D5D5D5"><?php echo $result3["c15"]; ?></td>
+            <td align="center">จำนวนครัวเรือน (ครัวเรือน)</td>
+        </tr>
     </table>
     <br>
     <br>
@@ -152,18 +147,6 @@ $result3 = mysqli_fetch_array($query, MYSQLI_ASSOC)
 </body>
 
 </html>
-
 <?php
-
-$HTMLoutput = ob_get_contents();
-ob_end_clean();
-
-$mpdf = new mPDF('th', 'A4-L', '10', '', '15', '15', '15', '15');
-
-$mpdf->WriteHTML($HTMLoutput,2);
-$mpdf->Output();
-
-$mpdf->Output("user_pdf/report.pdf");
-
-?>
-
+include_once 'pdfproperties.php';
+;?>

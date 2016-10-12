@@ -42,13 +42,26 @@ session_start();
                 ?>
 
 
-                <?php
-                if ($_SESSION)
-                    echo " <li>
-                    <a href=\"policyreport.php\">ระบบติดตามประเมินผลนโยบายและแผน</a>
-                </li>";
-                ?>
+<!--                --><?php
+//                if ($_SESSION)
+//                    echo " <li>
+//                    <a href=\"policyreport.php\">ระบบติดตามประเมินผลนโยบายและแผน</a>
+//                </li>";
+//                ?>
 
+                <?php
+                if ($_SESSION){
+                    echo "  <li class=\"dropdown\">
+                    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">ระบบติดตามประเมินผลนโยบายและแผน
+                        <span class=\"caret\"></span></a>
+                    <ul class=\"dropdown-menu\">
+                        <li><a href=\"policyreport1.php\">ยุทธศาสตร์ที่ 1</a></li>
+                        <li><a href=\"policyreport2.php\">ยุทธศาสตร์ที่ 2</a></li>
+                        <li><a href=\"policyreport3.php\">ยุทธศาสตร์ที่ 3</a></li>
+                        <li><a href=\"policyreport4.php\">ยุทธศาสตร์ที่ 4</a></li>
+                    </ul>
+                </li>"; }
+                ?>
 
                 <?php
                 if ($_SESSION["role"] == "ceo"){
@@ -58,8 +71,8 @@ session_start();
                     <ul class=\"dropdown-menu\">
                         <li><a href=\"policyreportbackend1.php\">ยุทธศาสตร์ที่ 1</a></li>
                         <li><a href=\"policyreportbackend2.php\">ยุทธศาสตร์ที่ 2</a></li>
-                        <li><a href=\"policyreportbackend1.php\">ยุทธศาสตร์ที่ 3</a></li>
-                        <li><a href=\"policyreportbackend2.php\">ยุทธศาสตร์ที่ 4</a></li>
+                        <li><a href=\"policyreportbackend3.php\">ยุทธศาสตร์ที่ 3</a></li>
+                        <li><a href=\"policyreportbackend4.php\">ยุทธศาสตร์ที่ 4</a></li>
                     </ul>
                 </li>"; }
                 ?>
