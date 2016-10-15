@@ -85,7 +85,7 @@ session_start();
                 <?php
                 if ($_SESSION["role"] == "staff" || $_SESSION["role"] == "board")
                     echo " <li>
-                    <a href=\"boardstaff.php\">ระบบติดตามประเมินผลโครงการจัดที่ดิน</a>
+                    <a href=\"boardstaff1.php\">ระบบติดตามประเมินผลโครงการจัดที่ดิน</a>
                 </li>";
                 ?>
 
