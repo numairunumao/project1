@@ -104,7 +104,8 @@ if (!$_SESSION) {
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <form method="post" action="uploadbackendprocess2.php" enctype="multipart/form-data">
+                                    <form method="post" action="uploadbackendprocess2.php"
+                                          enctype="multipart/form-data">
                                         <div class="row">
                                             <div class="col-sm-6"><b>ชื่อจังหวัด</b></div>
                                             <div class="col-sm-6"><select class="form-control" name="province" required>

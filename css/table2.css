@@ -11,9 +11,11 @@
     display: table-header-group;
 }
 .divTableCell, .divTableHead {
-    border: 1px solid #2C3E50;
+    border: 1px solid #03150e;
     display: table-cell;
-    padding: 10px 10px;
+    padding: 7px 5px;
+
+
 }
 .divTableHeading {
     background-color: #EEE;

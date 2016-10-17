@@ -1,12 +1,19 @@
 body{
-    background-color: #f0ad4e;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .centered-form .panel{
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+    box-shadow: rgba(3, 21, 14, 0.3) 20px 20px 20px;
 }
 
 body {
     font-family: 'Kanit', sans-serif;
     font-size: 14px;
+}
+
+tr  {
+
+    border:1px solid #DCDCDC;
+
+
 }

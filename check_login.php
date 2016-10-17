@@ -67,7 +67,7 @@ if ($objResult)
         $_SESSION["name"] = $objResult["name"];
         $message = "ยินดีต้อนรับเข้าสู่ระบบ (กรรมการ)";
         echo "<script type='text/javascript'>alert('$message') ;</script> ";
-        header("refresh:1;boardstaff1.php");   // BOARD
+        header("refresh:1;boardstaff.php");   // BOARD
     }
 
     else if ($objResult["role"] == "staff")
